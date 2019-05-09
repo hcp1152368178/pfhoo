@@ -1,0 +1,110 @@
+/* 
+* @Author: Marte
+* @Date:   2019-05-07 23:34:08
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-05-08 21:14:28
+*/
+/*注册页头部标题*/
+.reg_title{
+    margin:78px 0 0 10px;
+}
+/*注册页主要内容区*/
+main{
+    width: 100%;
+    height:560px;
+    background:url(../img/bg/reg_bg_pic.jpg) -235px center no-repeat;/*背景图*/
+    position: relative;
+}
+#regbox{
+    position: absolute;
+    width: 438px;
+    height: 470px;
+    background: #FFFFFF;
+    top: 36px;
+    right:200px;
+    z-index: 100000;
+    border:1px solid #c6c6c6;
+}
+#regbox_hd{
+    width: 438px;
+    height: 40px;
+    color: #BC338B;
+    background: #F5F8FA;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+}
+#regbox_bd{
+    width: 360px;
+    height: 398px;
+    margin:0 39px;
+    padding:25px 0 0;
+}
+.jianGe{
+    height: 24px;
+    line-height: 24px;
+}
+.jianGe2{
+    height: 12px;
+    line-height: 12px;
+}
+#user,#psw,#repsw,#yaoqingma,#register{
+    display: block;
+    width: 360px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #c6c6c6;
+    padding: 0 0 0 10px;
+    color: #999;
+}
+#codebox{
+    width: 360px;
+    height: 36px;
+}
+#code{
+    display: block;
+    width: 188px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #c6c6c6;
+    padding: 0 0 0 10px;
+    color: #999;
+}
+#btncode{
+    display: block;
+    width: 160px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #c6c6c6;
+    margin-left: 10px;
+    color: #000000;
+}
+#agree{
+    font-size: 14px;
+    margin-left: 10px;
+}
+#xieyi a{
+    font-size: 14px;
+}
+#xieyi{
+    margin-top: 20px;
+}
+#register{
+    margin-top: 20px;
+    background: #BC338B;
+    color:#FFFFFF;
+}
+
+input[type='checkbox']{
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    /*-webkit-appearance:none;*/
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+input[type=checkbox]:checked{
+    background: url("/img/checkedbox.png")no-repeat center;
+

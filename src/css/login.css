@@ -1,0 +1,44 @@
+/* 
+* @Author: Marte
+* @Date:   2019-05-07 23:34:08
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-05-08 21:49:37
+*/
+/*登录页头部标题*/
+.login_title{
+    margin:78px 0 0 10px;
+}
+/*登录页主要内容区*/
+main{
+    width: 100%;
+    height:560px;
+    background:url(../img/bg/login_bg_pic.jpg) 0px center no-repeat;/*背景图*/
+    position: relative;
+}
+#loginbox{
+    position: absolute;
+    width: 438px;
+    height: 398px;
+    border: 1px solid #c6c6c6;
+    background: #FFFFFF;
+    top: 66px;
+    right: 250px;
+    z-index: 9999;
+}
+
+/*#loginbox .hd{
+    height: 31px;
+    padding: 19px 0 0 40px;
+    background: #f5f8fa;
+}*/
+#loginbox .hd li {
+    float:left;
+    width: 110px;
+    height: 30px;
+}
+#loginbox .hd{
+    width: 360px;
+    height: 398px;
+    margin:0 39px;
+    padding:25px 0 0;
+}
