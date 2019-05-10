@@ -2,14 +2,8 @@
 * @Author: Marte
 * @Date:   2019-05-07 23:15:31
 * @Last Modified by:   Marte
-* @Last Modified time: 2019-05-08 19:26:31
+* @Last Modified time: 2019-05-09 17:39:12
 */
-*{margin: 0;padding: 0;box-sizing: border-box;}
-/*wrap 最外面的盒子*/
-#wrap{
-    width: 100%;
-    height: 100%;
-}
 /*header 头部*/
 #header{
     width: 100%;
@@ -18,81 +12,4 @@
 }
 .header_logo{
     margin: 52px 0 0 ;
-}
-
-/*footer 底部*/
-footer{
-    width: 100%;
-    height: 445px;
-    background: #EEEEEE;
-}
-footer article{
-    height: 415px;
-}
-footer article .footer-main{
-    height: 274px;
-    padding: 25px 0 50px;
-    border-bottom: 1px solid #bababa !important;
-}
-footer article .footer-main li{
-    float:left;
-    width: 170px;
-    height: 198px;
-}
-footer article .footer-main li dl{
-    width: 170px;
-    height: 198px;
-}
-footer .footer-main li dl dt {
-    margin-bottom: 15px;
-    font-size: 16px;
-    color: #e5e5e5;
-}
-footer dt {
-    color: #000 !important;
-}
-footer .footer-main li dl dd {
-    height: 24px;
-    line-height: 24px;
-    color: #e5e5e5;
-}
-footer dd {
-    color: #555 !important;
-}
-footer .footer-main li a {
-    display: inline;
-    font-size: 14px;
-    color: #e5e5e5;
-}
-footer dd a {
-    color: #555 !important;
-}
-footer .footer-main li:last-child dl{
-    width: 105px;
-    height: 132px;
-}
-footer .copyright{
-    height: 12px;
-    margin:30px 0 15px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 12px;
-    color:#777777;
-}
-footer .copyright a{
-    font-size: 14px;
-    color:#777777;
-}
-footer .footadd{
-    width:1000px;
-    padding-top: 30px;
-    margin: 0 100px;
-}
-footer .footadd img{
-    margin-left: 40px;
-}
-footer p{
-    width:100%;
-    height: 30px;
-    background: #EEEEEE;
 }

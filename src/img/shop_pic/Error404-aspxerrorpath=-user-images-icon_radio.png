@@ -1,0 +1,60 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>404</title>
+    <link rel="stylesheet" type="text/css" href="/Content/stylesheets/reset.css">
+    <link rel="stylesheet" type="text/css" href="/Content/stylesheets/wrong.css" />
+    <script src="/Scripts/jquery-1.9.1.min.js"></script>
+    <script language="javascript" type="text/javascript">
+       
+        var i = 4;
+        var intervalid;
+        intervalid = setInterval("fun()", 1000);
+        function fun() {
+            if (i == 1) {
+                window.location.href = "javascript:history.go(-1)";
+                clearInterval(intervalid);
+            }
+            $("#mes").html("0" + i);
+            i--;
+
+        }
+    </script>
+</head>
+<body>
+    <div class="wrong">
+        <div class="clear">
+            <div class="wrong-side">
+                <img src="/Content/images/wrong.png" />
+                <a href="/" class="back-index">直接返回首页</a>
+                <a href="javascript:go(-1)" class="back-prev">直接返回上一级</a>
+            </div>
+            <div class="wrong-main">
+                <img src="/Content/images/lkn_logo.png" />
+                <div class="wrong-word">
+                    <img src="/Content/images/wrong2.png" /> Sorry !  您访问的页面不存在......
+                </div>
+                <div class="wrong-countdown">
+                    本页面将于<span id="mes">5秒</span>后自动跳转至网站首页
+                </div>
+                <div class="wrong-line"></div>
+                <p>宝宝，我们再  <a href="javascript:go(-1)">回到上一级 </a> 看一看吧！</p>
+                <p>可是！宝宝，想去其他页面逛逛：</p>
+                <div class="wrong-links">
+                    <a href="#">关于我们</a>
+                    <a href="#">新手指引</a>
+                    <a href="#">买家须知</a>
+                    <a href="#">供应商须知</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

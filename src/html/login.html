@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../css/base_px.css" />
+        <link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
         <link rel="stylesheet" type="text/css" href="../css/login_reg_common.css" />
         <link rel="stylesheet" type="text/css" href="../css/login.css" />
     </head>
@@ -29,7 +30,7 @@
                         <dd class="topnav_line"></dd>
                     </dl>
                     <dl class="topnav_r fr">
-                        <dd class="more">
+                        <dd>
                             <h2><a href="#">我的批发户<i class="commom-icon1"></i></a></h2>
                             <ul>
                                 <li>
@@ -70,7 +71,7 @@
                         </dd>
                         
                         <dd class="topnav_line"></dd>
-                        <dd class="more">
+                        <dd>
                             <h2><a href="#">收藏夹<i class="commom-icon1"></i></a></h2>
                             <ul style="width:auto;">
                                 <li style="text-align:center;">
@@ -81,17 +82,17 @@
                                 </li>
                             </ul>
                         </dd> 
-                        <dd class="topnav-line"></dd> 
+                        <dd class="topnav_line"></dd> 
                         <dd class="">
                             <a href="#" target="_blank">行业资讯</a>
                         </dd>
-                        <dd class="topnav-line"></dd>
+                        <dd class="topnav_line"></dd>
                         <dd>
                             <a href="#">我是卖家</a>
                         </dd>
                         
-                        <dd class="topnav-line"></dd>
-                        <dd class="more">
+                        <dd class="topnav_line"></dd>
+                        <dd>
                             <h2><a href="#">平台客服<i class="commom-icon1"></i></a></h2>
                             <ul style="width:auto;right: 3px;">
                                 <li style="text-align:center;">
@@ -105,8 +106,7 @@
                     </dl>
                 </div>
             </div>
-
-            <!-- #header 头部-->
+<!-- #header 头部-->
             <div id="header">
                 <div class="header con">
                     <div class="header_logo fl">
@@ -116,24 +116,62 @@
                 </div>
             </div>
             
+            
             <!-- #main 主体-->
             <main>
                 <div id="main" class="con">
                     <div id="loginbox">
-                        <ul class="hd">
-                            <li>密码登录</li>
+                        <ul id="loginbox_hd">
+                            <li class="active">密码登录</li>
                             <li>验证码登录</li>
                         </ul>
                         <div id="loginbox_bd">
-                            <form action="#">
-                                <input type="tel" id="user" value="" placeholder="手机"/>
+                            <!-- 密码登录 -->
+                            <form action="#" >
+                                <input type="tel" id="user" value="" placeholder="手机/用户名"/>
                                 <div for="phone" class="jianGe"></div>
-
                                 <input type="password" id="psw" value="" placeholder="密码"/>
                                  <div for="psw" class="jianGe"></div>
+                                <div class="remember" >
+                                    <input type="checkbox" /><span>记住我</span>
+                                    <a href="#" class="fr">忘记密码？</a>
+                                </div>
+                                <!-- <div class="remember">
+                                    <div class="left">
+                                        <input type="checkbox" /><span>记住我</span>
+                                    </div>
+                                    <div class="right">
+                                        <a href="#">忘记密码？</a>
+                                    </div>
+                                </div> -->
 
-                                
                                 <input type="button" value="登录" id="login"/>
+
+                                <div class="register-free">
+                                    <div class="right registerurl">
+                                        <a href="reg.html">免费注册</a>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                            <!-- 验证码登录 -->
+                            <form action="#" style="display:none;">
+                                <input type="tel" id="user" value="" placeholder="手机"/>
+                                <div for="phone" class="jianGe"></div>
+                                <div id="codebox">
+                                    <input class="fl" type="text" id="code" value="" placeholder="验证码"/>
+                                    <input class="fl" type="button" id="btncode" value="免费获取验证码"/>
+                                </div>
+
+                                <input type="button" value="登录" id="login"/>
+
+                                <div class="register-free">
+                                    <div class="right registerurl">
+                                        <a href="reg.html">免费注册</a>
+                                    </div>
+                                </div>
+
                             </form>
                         </div>
                     </div>
@@ -317,6 +355,71 @@
                 </article>
                 <p></p>
             </footer>
+
+
+            <!-- 右边导航栏 -->
+            <div id="sider">
+                <div class="sidebar-nav">
+                    <div class="e-sidebar-b">
+                            <a href="#" id="user" style="height:35px;text-align:center;border-bottom:0px;">
+                                <i class="icon iconfont1 icon-wo"></i>
+                            </a>
+                        <ul class="e-sidebar-tab">
+                            <li id="sidebarchart" class="e-sidebar-boder">
+                                <a href="#" class="e-shop-wrap e-nav-wrap">
+                                     <img src="../img/shop_pic/receipt1.png" height="23" width="25">
+                                     <i id="rightseven" class="e-icon e-icon-shop"></i>
+                                     <p style="margin-top:10px;">进货单</p>
+                                     <span id="J_sidebar_shop_num" style="display: inline-block;">0</span>
+                                </a>
+                            </li>
+                            <li class="e-sidebar-item">
+                                    <a href="javascript:;" onclick="GetLoginAndRegister()" class="e-shop-wrap e-nav-wrap" text-content="我的收藏">
+                                        <i class="icon iconfont1 icon-shoucang"></i>
+                                    </a>
+                            </li>
+                            <li class="e-sidebar-item">
+                                <a target="_blank" href="#" class="e-shop-wrap e-nav-wrap" text-content="客服QQ">
+                                    <i class="icon iconfont1 icon-qq"></i>
+                                </a>
+                            </li>
+                            <li class="e-sidebar-item">
+                                <div class="e-shop-wrap e-nav-wrap" text-content="400 860 5859">
+                                    <i class="icon iconfont1 icon-dianhua"></i>
+                                </div>
+                            </li>
+                            <li class="e-sidebar-item">
+                                <div class="e-shop-wrap e-nav-wrap" text-content="1">
+                                    <i class="icon iconfont1 icon-erweima"></i>
+                                </div>
+                            </li>
+                            <li class="e-sidebar-item">
+                                <div class="e-shop-wrap e-nav-wrap" text-content="敬请期待">
+                                    <i class="icon iconfont1 icon-wodeyouhuijuan"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="e-sidebar-ft">
+                        <ul class="e-sidebar-tab">
+                            <li class="e-sidebar-item">
+                                <a href="#" class="e-shop-wrap e-nav-wrap">
+                                    <i class="icon iconfont1 icon-yijianfankui"></i>
+                                </a>
+                            </li>
+                            <li class="e-sidebar-item lkn-sidebar-backtop" style="display: none; height: 36px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                                <a href="javascript:;" class="e-shop-wrap e-nav-wrap">
+                                    <i class="icon iconfont1 icon-icon3"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="e-sidebar-panel">
+                         
+                </div>
+            </div>
+
         </div>
     </body>
 </html>

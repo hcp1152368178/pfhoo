@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../css/base_px.css" />
+        <link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
         <link rel="stylesheet" type="text/css" href="../css/login_reg_common.css" />
         <link rel="stylesheet" type="text/css" href="../css/reg.css" />
     </head>
@@ -13,7 +14,9 @@
             <div class="topadnew">       
             </div>
             <div id="topnav">
-                <div class="topnav con"> 
+                <div class="topnav con">
+
+                    <!-- 顶部左边导航栏 --> 
                     <dl class="topnav_l fl">
                         <dd>您好！</dd>
                         <dd class="">
@@ -28,8 +31,10 @@
                         </dd>
                         <dd class="topnav_line"></dd>
                     </dl>
+
+                    <!-- 顶部右边导航栏 -->
                     <dl class="topnav_r fr">
-                        <dd class="more">
+                        <dd>
                             <h2><a href="#">我的批发户<i class="commom-icon1"></i></a></h2>
                             <ul>
                                 <li>
@@ -70,7 +75,7 @@
                         </dd>
                         
                         <dd class="topnav_line"></dd>
-                        <dd class="more">
+                        <dd>
                             <h2><a href="#">收藏夹<i class="commom-icon1"></i></a></h2>
                             <ul style="width:auto;">
                                 <li style="text-align:center;">
@@ -91,7 +96,7 @@
                         </dd>
                         
                         <dd class="topnav_line"></dd>
-                        <dd class="more">
+                        <dd>
                             <h2><a href="#">平台客服<i class="commom-icon1"></i></a></h2>
                             <ul style="width:auto;right: 3px;">
                                 <li style="text-align:center;">
@@ -329,6 +334,70 @@
                 </article>
                 <p></p>
             </footer>
+
+            <!-- 右边导航栏 -->
+            <div id="sider">
+                <div class="sidebar-nav">
+                    <div class="e-sidebar-b">
+                            <a href="#" id="user" style="height:35px;text-align:center;border-bottom:0px;">
+                                <i class="icon iconfont1 icon-wo"></i>
+                            </a>
+                        <ul class="e-sidebar-tab">
+                            <li id="sidebarchart" class="e-sidebar-boder">
+                                <a href="#" class="e-shop-wrap e-nav-wrap">
+                                     <img src="../img/shop_pic/receipt1.png" height="23" width="25">
+                                     <i id="rightseven" class="e-icon e-icon-shop"></i>
+                                     <p style="margin-top:10px;">进货单</p>
+                                     <span id="J_sidebar_shop_num" style="display: inline-block;">0</span>
+                                </a>
+                            </li>
+                            <li class="e-sidebar-item">
+                                    <a href="javascript:;" onclick="GetLoginAndRegister()" class="e-shop-wrap e-nav-wrap" text-content="我的收藏">
+                                        <i class="icon iconfont1 icon-shoucang"></i>
+                                    </a>
+                            </li>
+                            <li class="e-sidebar-item">
+                                <a target="_blank" href="#" class="e-shop-wrap e-nav-wrap" text-content="客服QQ">
+                                    <i class="icon iconfont1 icon-qq"></i>
+                                </a>
+                            </li>
+                            <li class="e-sidebar-item">
+                                <div class="e-shop-wrap e-nav-wrap" text-content="400 860 5859">
+                                    <i class="icon iconfont1 icon-dianhua"></i>
+                                </div>
+                            </li>
+                            <li class="e-sidebar-item">
+                                <div class="e-shop-wrap e-nav-wrap" text-content="1">
+                                    <i class="icon iconfont1 icon-erweima"></i>
+                                </div>
+                            </li>
+                            <li class="e-sidebar-item">
+                                <div class="e-shop-wrap e-nav-wrap" text-content="敬请期待">
+                                    <i class="icon iconfont1 icon-wodeyouhuijuan"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="e-sidebar-ft">
+                        <ul class="e-sidebar-tab">
+                            <li class="e-sidebar-item">
+                                <a href="#" class="e-shop-wrap e-nav-wrap">
+                                    <i class="icon iconfont1 icon-yijianfankui"></i>
+                                </a>
+                            </li>
+                            <li class="e-sidebar-item lkn-sidebar-backtop" style="display: none; height: 36px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                                <a href="javascript:;" class="e-shop-wrap e-nav-wrap">
+                                    <i class="icon iconfont1 icon-icon3"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="e-sidebar-panel">
+                         
+                </div>
+            </div>
+
         </div>
     </body>
 </html>

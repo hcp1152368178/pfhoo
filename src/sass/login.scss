@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* 
+* @Author: Marte
+* @Date:   2019-05-07 23:34:08
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-05-08 21:49:37
+*/
+/*登录页头部标题*/
+.login_title{
+    margin:78px 0 0 10px;
+}
+/*登录页主要内容区*/
+main{
+    width: 100%;
+    height:560px;
+    background:url(../img/bg/login_bg_pic.jpg) 0px center no-repeat;/*背景图*/
+    position: relative;
+}
+//登录框 
+.seta{
+    color:black;
+    font-size:14px;
+}
+#loginbox{
+    position: absolute;
+    width: 438px;
+    height: 398px;
+    border: 1px solid #c6c6c6;
+    background: #FFFFFF;
+    top: 66px;
+    right: 250px;
+    z-index: 9999;
+   
+    #loginbox_hd{
+        width: 438px;
+        height: 50px;
+        padding: 19px 0 0 40px;
+        background: #f5f8fa;
+        li {
+            float:left;
+            width: 110px;
+            height: 30px;
+            text-align:center;
+            line-height: 30px;
+            &.active{
+                background:#FFFFFF;
+                color:#BC338B;
+            }
+        }
+    }
+    #loginbox_bd{
+        width: 360px;
+        height: 297px;
+        margin:0 40px;
+        padding:50px 0 0;
+        form{
+            display:block;
+            width: 360px;
+            height:248px;
+            #user,#psw{
+                display: block;
+                width: 360px;
+                height: 36px;
+                line-height: 36px;
+                border: 1px solid #c6c6c6;
+                padding: 0 0 0 10px;
+                color: #999;
+            }
+            #codebox{
+            width: 360px;
+            height: 36px;
+                #code{
+                    display: block;
+                    width: 188px;
+                    height: 36px;
+                    line-height: 36px;
+                    border: 1px solid #c6c6c6;
+                    padding: 0 0 0 10px;
+                    color: #999;
+                }
+                #btncode{
+                    display: block;
+                    width: 160px;
+                    height: 36px;
+                    line-height: 36px;
+                    border: 1px solid #c6c6c6;
+                    margin-left: 10px;
+                    color: #000000;
+                }
+            }
+            .jianGe{
+                height: 24px;
+                line-height: 24px;
+            }
+            .remember{
+                width:360px;
+                height: 14px;
+                font-size:14px;
+                line-height: 14px;
+                span{
+                    display:inline-block;
+                    font-size:14px;
+                    margin-left: 5px;
+                }
+                a{
+                    @extend .seta;
+                }
+            }
+            #login{
+                width: 100%;
+                height:40px;
+                margin-top: 35px;
+                background: #BC338B;
+                color:#FFFFFF;
+            }  
+            .register-free{
+                width: 360px;
+                height: 14px;
+                text-align:right;
+                margin-top:20px;
+                .registerurl{
+                    
+                    a{
+                         @extend .seta;
+                    } 
+                }
+            }
+        }
+    }
+}
+
