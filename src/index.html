@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/base_px.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+    </head>
+    <body>
+        <!-- wrap 最外层盒子 -->
+        <div id="wrap">
+            <!--topadnew 顶部-->
+            <div class="topadnew"></div>       
+
+            <!--topnav 顶部导航 -->
+            <div id="topnav">
+                <div class="topnav con"> 
+                    <dl class="topnav_l fl">
+                        <dd>您好！</dd>
+                        <dd class="">
+                                <a class="login-please"> 欢迎来到批发户!&nbsp;&nbsp;&nbsp;</a>
+                        </dd>
+                        <dd>
+                                <a href="#" class="login-please" style="color:#bc338b">请登录</a>
+                        </dd>
+                        <dd class="topnav_line"></dd>
+                        <dd class="">
+                                <a href="#" class="loginister-please">免费注册</a>
+                        </dd>
+                        <dd class="topnav_line"></dd>
+                    </dl>
+                    <dl class="topnav_r fr">
+                        <dd>
+                            <h2><a href="#">我的批发户<i class="commom-icon1"></i></a></h2>
+                            <ul>
+                                <li>
+                                    <a href="#">我的订单</a>
+                                </li>
+                                <li>
+                                    <a href="#">我的数据</a>
+                                </li>
+                                <li>
+                                    <a href="#">我的产品</a>
+                                </li>
+                                <li>
+                                    <a href="#">我的权限</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#">快速选购</a>
+                                </li>
+                                <li>
+                                    <a href="#">产品动态</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#">我的API</a>
+                                </li>
+                                <li>
+                                    <a href="#">我的钱包</a>
+                                </li>
+                                <li>
+                                    <a href="#">账户管理</a>
+                                </li>
+                                <li>
+                                    <a href="#">新手帮助</a>
+                                </li>
+                                
+                            </ul>
+
+                        </dd>
+                        
+                        <dd class="topnav_line"></dd>
+                        <dd>
+                            <h2><a href="#">收藏夹<i class="commom-icon1"></i></a></h2>
+                            <ul style="width:auto;">
+                                <li style="text-align:center;">
+                                        <a href="javascript:;" onclick="GetLoginAndloginister()">收藏的货品</a>
+                                </li>
+                                <li style="text-align:center;">
+                                        <a href="javascript:;" onclick="GetLoginAndloginister()">收藏的店铺</a>
+                                </li>
+                            </ul>
+                        </dd> 
+                        <dd class="topnav_line"></dd> 
+                        <dd class="">
+                            <a href="#" target="_blank">行业资讯</a>
+                        </dd>
+                        <dd class="topnav_line"></dd>
+                        <dd>
+                            <a href="#">我是卖家</a>
+                        </dd>
+                        
+                        <dd class="topnav_line"></dd>
+                        <dd>
+                            <h2><a href="#">平台客服<i class="commom-icon1"></i></a></h2>
+                            <ul style="width:auto;right: 3px;">
+                                <li style="text-align:center;">
+                                    <a target="_blank" href="#">卖家客服</a>
+                                </li>
+                                <li style="text-align:center;">
+                                    <a target="_blank" href="#">买家客服</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+            <!-- head 头部-->
+            <div id="header">
+                <div class="header con">
+
+                    <div class="header_logo clearfix fl">
+                        <a href="#"><img src="img/login_reg_pic/logo.png"></a>
+                    </div>
+
+                    <div class="search fl">
+                        <ul class="hot-recommended">
+                            <li style="border-right: 0;">热搜词：</li>
+                            <li><a href="#">纯银首饰</a></li>
+                            <li><a href="#">925戒指</a></li>
+                            <li><a href="#">抖音同款</a></li>
+                            <li><a href="#">施华洛世奇元素</a></li>
+                            <li style="border-right: 0;"><a href="#">毛衣链</a></li>
+                        </ul>
+                        <form action="#">
+                            <fieldset>
+                                <div class="search_l">
+                                    <select id="search_select">
+                                        <option class="#FFFFFF">货源</option>
+                                        <option class="#FFFFFF">供应商</option>
+                                    </select>
+                                </div>
+                                <input class="search_c fl" type="text" />
+                                <button class="search_r fr" type="button" >搜索</button>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <div class="cart fl">
+                        <div class="cart_item">
+                            <!-- 购物车 -->
+                        </div>
+                    </div>
+                    <div class="shujubao fl">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- nav 导航栏  -->
+            <nav>
+                <div class="nav con">
+                    <ul class="nav_l">
+                         <li>
+                            <a href="#" style="width:240px;background:#BC338B;text-align:center;height:38px;" class="hover"><i class="navTab_Icon fl"></i><span>商品分类</span><span class="nav_subTit">跨境首饰专供</span></a>
+                            <ul class="nav2">
+                                <!-- <li class="nav2_li1">
+                                    <div class="nav2_li1_div">
+                                        <a class="nav2_li1_div_a" href="http://www.pfhoo.com/sssp" alt="http://www.pfhoo.com/sssp" align="center">
+                                        <img src="https://cdnimg.pfhoo.com/Content/201807/20180726185537327.png">
+                                            时尚饰品
+                                        </a>
+                                        <div class="nav2_li1_div_span clearfix">
+                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/ring?sort=1">
+                                                戒指
+                                            </a>
+                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/necklace?sort=1">
+                                                项链
+                                            </a>
+                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/earrings?sort=1">
+                                                耳饰
+                                            </a>
+                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/bracelace?sort=1">
+                                                手链
+                                            </a>
+                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/bracelet?sort=1">
+                                                手镯
+                                            </a>
+                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/anklet?sort=1">
+                                                脚链
+                                            </a>
+                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/jewelrysuit?sort=1">
+                                                套装
+                                            </a>
+                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/brooch?sort=1">
+                                                胸针
+                                            </a>
+                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/tire?sort=1">
+                                                头饰
+                                            </a>
+                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/Cat?CatId=224">
+                                                钱夹
+                                            </a>
+                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/Cat?CatId=54">
+                                                包装
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav2_li2">
+                                    <div class="nav2_li2_div">
+                                        <a class="nav2_li2_div_a" href="http://www.pfhoo.com/sssp" alt="http://www.pfhoo.com/sssp" align="center">
+                                        <img src="https://cdnimg.pfhoo.com/Content/201807/20180726185537327.png">
+                                            纯银首饰
+                                        </a>
+                                        
+                                            <div class="mainnav_dl-li-div_span clearfix">
+                                                    <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-ring?sort=1">
+                                                        戒指
+                                                    </a>
+                                                    <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-necklace?sort=1">
+                                                        项链
+                                                    </a>
+                                                    <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-earrings?sort=1">
+                                                        耳饰
+                                                    </a>
+                                                    <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-bracelet?sort=1">
+                                                        手链
+                                                    </a>
+                                                    <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-bangle?sort=1">
+                                                        手镯
+                                                    </a>
+                                                    <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-anklet?sort=1">
+                                                        脚链
+                                                    </a>
+                                                    <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-accessories?sort=1">
+                                                        配件
+                                                    </a>
+                                                    <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-suit?sort=1">
+                                                        套装
+                                                    </a>
+                                            </div>
+                                    </div> -->
+                               <!--  </li>
+                                <li class="nav2_li3">
+                                    <div class="nav2_li3_div">
+                                        <a class="nav2_li3_div_a" href="http://www.pfhoo.com/sxpt" alt="http://www.pfhoo.com/sxpt" align="center">
+                                            <img src="https://cdnimg.pfhoo.com/Content/201807/20180726185628525.png">
+                                            适销平台
+                                        </a>
+                                        
+                                            <div class="nav2_li3_div_span clearfix">
+                                                    <a class="mainnav_dl-li-mover" href="https://www.pfhoo.com/cat?platid=41">
+                                                        Wish
+                                                    </a>
+                                                    <a class="mainnav_dl-li-mover" href="https://www.pfhoo.com/cat?platid=44">
+                                                        Amazon
+                                                    </a>
+                                                    <a class="mainnav_dl-li-mover" href="https://www.pfhoo.com/cat?platid=40">
+                                                        Aliexpress
+                                                    </a>
+                                                    <a class="mainnav_dl-li-mover" href="https://www.pfhoo.com/cat?platid=42">
+                                                        Lazada
+                                                    </a>
+                                            </div>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" style="color:#BC338B;">首页</a>
+
+                        </li>
+                        <li>
+                            <a href="#">新品爆款</a>
+
+                        </li>
+                        <li>
+                            <a href="#">品牌授权</a>
+
+                        </li>
+                        <li>
+                            <a href="#">首饰产地</a>
+
+                        </li>
+                        <li>
+                            <a href="#">适销平台</a>
+
+                        </li>
+                        <li>
+                            <a href="#">热销排行</a>
+
+                        </li>
+                    </ul>
+                    <ul class="nav_r fr">
+                        <li>
+                            <a href="#">跨境学院</a>
+                        </li>
+                        <li>
+                            <a href="#">卖家入驻</a>
+                        </li>
+                        <li>
+                            <a href="#">新手指南</a>
+                        </li>
+                    </ul>
+                
+    
+
+
+                    <!-- <dl class="nav_dl">
+                        <dt><a href="#" class="hover"><i class="navTab_Icon fl"></i><span>商品分类</span><span class="nav_subTit">跨境首饰专供</span></a></dt> -->
+
+                         <!-- <dd style="display: block">
+                                <ul class="mainnav_dl-con relative">
+                                        <li class="mainnav_dl-li mainnav-online" childId="mainnav_dl_word2823">
+                                            <div class="mainnav_dl-li-div">
+                                                <a class="mainnav_dl-li-div-a" href="http://www.pfhoo.com/sssp" alt="http://www.pfhoo.com/sssp" align="center">
+                                                    <img src="https://cdnimg.pfhoo.com/Content/201807/20180726185537327.png">
+                                                    时尚饰品
+                                                </a>
+                                                
+                                                    <div class="mainnav_dl-li-div-span clearfix">
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/ring?sort=1">
+                                                                戒指
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/necklace?sort=1">
+                                                                项链
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/earrings?sort=1">
+                                                                耳饰
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/bracelace?sort=1">
+                                                                手链
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/bracelet?sort=1">
+                                                                手镯
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/anklet?sort=1">
+                                                                脚链
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/jewelrysuit?sort=1">
+                                                                套装
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/brooch?sort=1">
+                                                                胸针
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/tire?sort=1">
+                                                                头饰
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/Cat?CatId=224">
+                                                                钱夹
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/Cat?CatId=54">
+                                                                包装
+                                                            </a>
+                                                    </div>
+                                            </div>
+                                        </li>
+                                        <li class="mainnav_dl-li mainnav-online" childId="mainnav_dl_word2873">
+                                            <div class="mainnav_dl-li-div">
+                                                <a class="mainnav_dl-li-div-a" href="http://www.pfhoo.com/cyss" alt="http://www.pfhoo.com/cyss" align="center">
+                                                    <img src="https://cdnimg.pfhoo.com/Content/201807/20180726185605158.png">
+                                                    纯银首饰
+                                                </a>
+                                                
+                                                    <div class="mainnav_dl-li-div-span clearfix">
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-ring?sort=1">
+                                                                戒指
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-necklace?sort=1">
+                                                                项链
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-earrings?sort=1">
+                                                                耳饰
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-bracelet?sort=1">
+                                                                手链
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-bangle?sort=1">
+                                                                手镯
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-anklet?sort=1">
+                                                                脚链
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-accessories?sort=1">
+                                                                配件
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="http://www.pfhoo.com/silver-suit?sort=1">
+                                                                套装
+                                                            </a>
+                                                    </div>
+                                            </div>
+                                        </li>
+                                        <li class="mainnav_dl-li mainnav-online" childId="mainnav_dl_word2904">
+                                            <div class="mainnav_dl-li-div">
+                                                <a class="mainnav_dl-li-div-a" href="http://www.pfhoo.com/sxpt" alt="http://www.pfhoo.com/sxpt" align="center">
+                                                    <img src="https://cdnimg.pfhoo.com/Content/201807/20180726185628525.png">
+                                                    适销平台
+                                                </a>
+                                                
+                                                    <div class="mainnav_dl-li-div-span clearfix">
+                                                            <a class="mainnav_dl-li-mover" href="https://www.pfhoo.com/cat?platid=41">
+                                                                Wish
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="https://www.pfhoo.com/cat?platid=44">
+                                                                Amazon
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="https://www.pfhoo.com/cat?platid=40">
+                                                                Aliexpress
+                                                            </a>
+                                                            <a class="mainnav_dl-li-mover" href="https://www.pfhoo.com/cat?platid=42">
+                                                                Lazada
+                                                            </a>
+                                                    </div>
+                                            </div>
+                                        </li>
+                                </ul>
+                                <div class="mainnav_dl-sub" id="mainnav_dl-sub">
+
+                                        <div id="mainnav_dl_word2823" childId="mainnav_dl_word2823" class="mainnav_dl-sub-word" style="width:100%;">
+                                            <div style="float:left;width:470px;min-height:1px;">
+                                                        <div class="nav_box">
+                                                            <h4>热门材质</h4>
+                                                            <div class="box">
+                                                                <ul>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?attrlist=10-823">锆石</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?attrlist=100005859-361395">黄色黄金</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?attrlist=100005859-100016649">锡合金</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?attrlist=10-200003753">半宝石</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?attrlist=10-352915">石头</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/search?keywords=%E9%92%9B%E9%92%A2">钛钢</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?attrlist=10-826">珍珠</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?attrlist=10-200661039">猫眼石</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/search?keywords=%E7%8E%9B%E7%91%99">玛瑙</a>
+                                                                            </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nav_box">
+                                                            <h4>流行元素</h4>
+                                                            <div class="box">
+                                                                <ul>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/search?keywords=%E6%96%BD%E5%8D%8E%E6%B4%9B%E4%B8%96%E5%A5%87%E5%85%83%E7%B4%A0">施华洛世奇</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/search?keywords=%E5%8A%A8%E7%89%A9">动物</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/search?keywords=%E5%8D%81%E5%AD%97%E6%9E%B6">十字架</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/search?keywords=%E6%A4%8D%E7%89%A9">植物</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/search?keywords=%E8%A1%A8%E6%83%85">表情</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/search?keywords=%E6%B0%B4%E6%BB%B4">水滴</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/search?keywords=%E6%9C%88%E4%BA%AE">月亮</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/search?keywords=%E6%B5%81%E8%8B%8F">流苏</a>
+                                                                            </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nav_box">
+                                                            <h4>流行风格</h4>
+                                                            <div class="box">
+                                                                <ul>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?attrlist=326-100013307">经典</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?attrlist=326-200003767">浪漫</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?attrlist=326-200572195">复古</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?attrlist=326-200660582">嘻哈</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?attrlist=326-200572194">甜美</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?attrlist=326-200572193">ol</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?attrlist=326-200572191">异国风情</a>
+                                                                            </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nav_box">
+                                                            <h4>源头产地</h4>
+                                                            <div class="box">
+                                                                <ul>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?IndustryId=7">义乌</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?IndustryId=3">汕尾</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?IndustryId=1">深圳</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?IndustryId=5">广州</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a style="height:15px" href="http://www.pfhoo.com/jewelry?IndustryId=4">东莞</a>
+                                                                            </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                            </div>
+                                        
+                        <div class="mainnav-sub-ad" style="float:left;width:277px;">
+                            <img src="images/index1.png"/>
+                            <img src="images/index2.png"/>
+                                <div style="height:200px;">
+                                    <h4>精品推荐</h4>
+                                    <a style="float:left;margin-left:3.5px;" target="_blank" title="" href="http://www.pfhoo.com/cat?sort=1">
+                                        <img style="width:240px;height:120px; margin-right:0px;" src="https://cdnimg.pfhoo.com/Adv/201808/20180814092904882.jpg">
+                                    </a>
+                                </div>
+                                <div style="height:200px;">
+                                    <h4>热销货源</h4>
+                                    <a style="float:left;margin-left:3.5px;" target="_blank" title="" href="http://www.pfhoo.com/silver-ring?sort=1">
+                                        <img style="width:240px;height:120px; margin-right:0px;" src="https://cdnimg.pfhoo.com/Adv/201808/20180814092840389.jpg">
+                                    </a>
+                                </div>
+                        </div>
+
+                        </div>
+                        <div id="mainnav_dl_word2873" childId="mainnav_dl_word2873" class="mainnav_dl-sub-word" style="width:100%;">
+                            <div style="float:left;width:470px;min-height:1px;">
+                                        <div class="nav_box">
+                                            <h4>镶嵌材质</h4>
+                                            <div class="box">
+                                                <ul>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?attrlist=10-823">锆石</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?attrlist=10-352915">石头</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?attrlist=10-826">珍珠</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?attrlist=10-200003753">半宝石</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?attrlist=10-394">水晶</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?attrlist=10-346">玻璃</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?IndustryId=0&amp;attrlist=10-361458">贝壳</a>
+                                                            </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav_box">
+                                            <h4>处理工艺</h4>
+                                            <div class="box">
+                                                <ul>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?attrlist=5000006-201442115">电镀</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?attrlist=5000006-201442116">镶钻</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?attrlist=5000006-201442118">抛光</a>
+                                                            </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav_box">
+                                            <h4>样式</h4>
+                                            <div class="box">
+                                                <ul>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?IndustryId=0&amp;attrlist=326-200003768">流行</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?IndustryId=0&amp;attrlist=326-200003767">浪漫</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?IndustryId=0&amp;attrlist=326-200003769">运动</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?IndustryId=0&amp;attrlist=326-100013307">经典</a>
+                                                            </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav_box">
+                                            <h4>源头产地</h4>
+                                            <div class="box">
+                                                <ul>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?IndustryId=1">深圳</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?IndustryId=3">汕尾</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?attrlist=&amp;IndustryId=4">东莞</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?attrlist=&amp;IndustryId=5">广州</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/silver-jewelry?attrlist=&amp;IndustryId=7">义乌</a>
+                                                            </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                            </div>
+                                                
+                        <div class="mainnav-sub-ad" style="float:left;width:277px;">
+                            <img src="images/index1.png"/>
+                            <img src="images/index2.png"/>
+                                <div style="height:200px;">
+                                    <h4>精品推荐</h4>
+                                    <a style="float:left;margin-left:3.5px;" target="_blank" title="" href="http://www.pfhoo.com/necklace?sort=1">
+                                        <img style="width:240px;height:120px; margin-right:0px;" src="https://cdnimg.pfhoo.com/Adv/201808/20180814092949483.jpg">
+                                    </a>
+                                </div>
+                                <div style="height:200px;">
+                                    <h4>热销货源</h4>
+                                    <a style="float:left;margin-left:3.5px;" target="_blank" title="" href="http://www.pfhoo.com/silver-necklace?sort=1">
+                                        <img style="width:240px;height:120px; margin-right:0px;" src="https://cdnimg.pfhoo.com/Adv/201808/20180814092933446.jpg">
+                                    </a>
+                                </div>
+                        </div>
+
+                        </div>
+                        <div id="mainnav_dl_word2904" childId="mainnav_dl_word2904" class="mainnav_dl-sub-word" style="width:100%;">
+                            <div style="float:left;width:470px;min-height:1px;">
+                                        <div class="nav_box">
+                                            <h4>适销平台</h4>
+                                            <div class="box">
+                                                <ul>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?platid=43&amp;sort=1">Ebay</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?platid=44&amp;sort=1"> Amazon</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?platid=40&amp;sort=1"> Aliexpress</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?platid=42&amp;sort=1"> Lazada</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?platid=41&amp;sort=1">Wish</a>
+                                                            </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav_box">
+                                            <h4>跨境服务</h4>
+                                            <div class="box">
+                                                <ul>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/PlaceShop">首饰产地</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/License">品牌授权</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://news.pfhoo.com/">跨境资讯</a>
+                                                            </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav_box">
+                                            <h4>适销国家</h4>
+                                            <div class="box">
+                                                <ul>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?countryList=28">新加坡</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?countryList=26">马来西亚</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?countryList=25">澳大利亚</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?countryList=16">意大利</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?countryList=18">荷兰</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?countryList=14">德国</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?countryList=13">法国 </a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?countryList=11">英国</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?countryList=12">西班牙</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?countryList=22">加拿大</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?countryList=38">巴西</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/cat?countryList=23">美国</a>
+                                                            </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nav_box">
+                                            <h4>促销优惠</h4>
+                                            <div class="box">
+                                                <ul>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/IndexRanking">热销排行</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://www.pfhoo.com/groupBuying">采购伙拼</a>
+                                                            </li>
+                                                            <li>
+                                                                <a style="height:15px" href="http://114.pfhoo.com/#/help?id=1,1,31">一件代发</a>
+                                                            </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                            </div>
+                                                
+                        <div class="mainnav-sub-ad" style="float:left;width:277px;">
+                            <img src="images/index1.png"/>
+                            <img src="images/index2.png"/>
+                                <div style="height:200px;">
+                                    <h4>精品推荐</h4>
+                                    <a style="float:left;margin-left:3.5px;" target="_blank" title="" href="http://www.pfhoo.com/silver-earrings?sort=1">
+                                        <img style="width:240px;height:120px; margin-right:0px;" src="https://cdnimg.pfhoo.com/Adv/201808/20180814093028358.jpg">
+                                    </a>
+                                </div>
+                                <div style="height:200px;">
+                                    <h4>热销货源</h4>
+                                    <a style="float:left;margin-left:3.5px;" target="_blank" title="" href="http://www.pfhoo.com/silver-suit?sort=1">
+                                        <img style="width:240px;height:120px; margin-right:0px;" src="https://cdnimg.pfhoo.com/Adv/201808/20180814093013270.jpg">
+                                    </a>
+                                </div>
+                        </div>
+
+
+                                </div>
+                            </div>
+                        </dd> -->
+                    <!-- </dl> -->
+                </div>
+            </nav>
+            <!-- main 主要内容 --> 
+            <main>
+                <div id="banner">
+                    <ul>
+                        <li><img src="img/banner/banner1.jpg"alt="" /></li>
+                        <li><img src="img/banner/banner2.jpg"alt="" /></li>
+                        <li><img src="img/banner/banner3.jpg"alt="" /></li>
+                    </ul>
+                </div>
+                <div class="main con">
+            
+                </div>
+            </main>
+
+            <!--  foot 底部-->
+            <footer>
+                <article class="con">
+                    <ul class="footer-main clearfix">
+                        <li>
+                            <dl>
+                                <dt>新手指引</dt>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/zhzl1">注册登录</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/zxdd1">选购下单</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/cpsj1">下载数据</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/yjkd">批量刊登</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/wlps1">物流配送</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/thh1">退货退款</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/cjwt1">常见问题</a>
+                                    </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>买家帮助</dt>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/zhzl1">账户资料</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/zxdd1">在线下单</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/cpsj1">产品数据</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/zffs1">支付方式 </a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/thh1">退款退货</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/wlps1">物流配送</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/shfw1">售后服务</a>
+                                    </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>卖家帮助</dt>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/sjzmrz">怎么入驻</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/sjrztj">入驻条件</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/spsjlc">产品上架</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/sjsqtx">申请提现</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://114.pfhoo.com/yfmbsz">运费设置</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/sjfhgl">发货管理</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/sjdthh">退货管理</a>
+                                    </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>关于我们</dt>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/ptjs">平台介绍</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/gsjs">公司介绍</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/zsrz">招商入驻</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/lxwm">联系我们</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/zxns">招贤纳士</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="https://www.pfhoo.com/Sitemap.html">网站地图</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="https://www.pfhoo.com/Services/Index/419">合作伙伴</a>
+                                    </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>活动专场</dt>
+                                    <dd>
+                                        <a target="_blank" href="https://www.pfhoo.com/groupBuying">采购伙拼</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="https://www.pfhoo.com/Services/Index/385">品牌授权</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="http://114.pfhoo.com/ppsj">品牌商家</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="https://www.pfhoo.com/PlaceShop">首饰产地</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="https://www.pfhoo.com/new">新品爆款</a>
+                                    </dd>
+                                    <dd>
+                                        <a target="_blank" href="https://www.pfhoo.com/IndexRanking">热销排行</a>
+                                    </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dd>销售客服热线</dd>
+                                <dd class="lkn-tel">400-860-5859</dd>
+                                <dd>投诉建议电话</dd>
+                                <dd class="lkn-tel">18123977231</dd>
+                                <dd>周一至周日9:00-18:00</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="fr">
+                                <img src="../img/footer_pic/MobileCode.png">
+                                <br>
+                                <span style="font-size: 12px;position: relative;top: 0px; color:#777777;">手机下单 轻松采购</span>
+                            </dl>
+                        </li>
+                    </ul>
+
+                    <div class="copyright con">
+                        © 2019 PFHOO.com 版权所有 <a href="#" >粤ICP备11062211号</a>
+                    </div>
+
+                    <div class="footadd clearfix">
+                        <a href="#">
+                            <img style="margin-left:0px;" src="../img/footer_pic/newGovIcon.gif" height="52" width="128">
+                        </a>
+
+                        <img src="../img/footer_pic/aliyun.jpg" height="52" width="128">
+
+                        <img src="../img/footer_pic/alipay.jpg" height="52" width="128">
+
+                        <a href="#">
+                            <img src="../img/footer_pic/pfhoo.jpg" height="52" width="128">
+                        </a>
+
+                        <a href="#">
+                            <img src="../img/footer_pic/shiming.jpg" height="52" width="128">
+                        </a>
+
+                        <a href="#">
+                            <img src="../img/footer_pic/Bottom_360rz.png" height="52" width="128">
+                        </a>
+                    </div>
+                </article>
+                <p></p>
+            </footer> 
+
+            <!--  右边导航栏 -->
+            <div id="sider">
+            <div class="sidebar-nav">
+                <div class="e-sidebar-b">
+                        <a href="#" id="user" style="height:35px;text-align:center;border-bottom:0px;">
+                            <i class="icon iconfont1 icon-wo"></i>
+                        </a>
+                    <ul class="e-sidebar-tab">
+                        <li id="sidebarchart" class="e-sidebar-boder">
+                            <a href="#" class="e-shop-wrap e-nav-wrap">
+                                 <img src="../img/shop_pic/receipt1.png" height="23" width="25">
+                                 <i id="rightseven" class="e-icon e-icon-shop"></i>
+                                 <p style="margin-top:10px;">进货单</p>
+                                 <span id="J_sidebar_shop_num" style="display: inline-block;">0</span>
+                            </a>
+                        </li>
+                        <li class="e-sidebar-item">
+                                <a href="javascript:;" onclick="GetLoginAndRegister()" class="e-shop-wrap e-nav-wrap" text-content="我的收藏">
+                                    <i class="icon iconfont1 icon-shoucang"></i>
+                                </a>
+                        </li>
+                        <li class="e-sidebar-item">
+                            <a target="_blank" href="#" class="e-shop-wrap e-nav-wrap" text-content="客服QQ">
+                                <i class="icon iconfont1 icon-qq"></i>
+                            </a>
+                        </li>
+                        <li class="e-sidebar-item">
+                            <div class="e-shop-wrap e-nav-wrap" text-content="400 860 5859">
+                                <i class="icon iconfont1 icon-dianhua"></i>
+                            </div>
+                        </li>
+                        <li class="e-sidebar-item">
+                            <div class="e-shop-wrap e-nav-wrap" text-content="1">
+                                <i class="icon iconfont1 icon-erweima"></i>
+                            </div>
+                        </li>
+                        <li class="e-sidebar-item">
+                            <div class="e-shop-wrap e-nav-wrap" text-content="敬请期待">
+                                <i class="icon iconfont1 icon-wodeyouhuijuan"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="e-sidebar-ft">
+                    <ul class="e-sidebar-tab">
+                        <li class="e-sidebar-item">
+                            <a href="#" class="e-shop-wrap e-nav-wrap">
+                                <i class="icon iconfont1 icon-yijianfankui"></i>
+                            </a>
+                        </li>
+                        <li class="e-sidebar-item lkn-sidebar-backtop" style="display: none; height: 36px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                            <a href="javascript:;" class="e-shop-wrap e-nav-wrap">
+                                <i class="icon iconfont1 icon-icon3"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="e-sidebar-panel">
+                     
+            </div>
+        </div> 
+        </div>
+    </body>
+</html>

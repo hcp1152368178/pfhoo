@@ -165,9 +165,14 @@ s,i,em{
 .topnav_r dd:hover ul{
     display:block;
 }
+.topnav_r dd h2:hover{
+    background: #FFFFFF;
+}
 .topnav_r dd h2 a:hover{ 
     color:#BC338B;
+    
 }
+
 /*header 头部*/
 #header{
     width: 100%;
