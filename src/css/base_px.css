@@ -89,7 +89,13 @@ s,i,em{
 .f12{ font-size: 12px;}
 .f14{ font-size: 14px;}
 .f16{ font-size: 16px;}
+.f20{ font-size: 20px;}
+.mt12{margin-top: 12px;}
+.mb4{margin-bottom: 4px;}
 
+.pr20{
+    padding-right: 20px;
+}
 /*最外层盒子*/
 #wrap{
     width: 100%;
@@ -268,6 +274,7 @@ footer p{
     top: 0;
     background-color: #0c1839;
     position: absolute;
+    z-index: 100000000;
 }
 .e-sidebar-b {
     right:0;

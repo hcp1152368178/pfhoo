@@ -184,137 +184,390 @@
 // }
 
 /*nav*/
+%nav3{
+    display:none;
+    position:absolute;
+    top:0;
+    left:240px;
+    width: 793px;
+    height: 400px;
+    background: #FFFFFF;
+    z-index:2000;
+    padding-top: 10px;
+}
+%PM{
+    margin:0 33px;
+    padding: 15px 12px;
+    box-sizing: border-box;
+}
+%img-icon{
+    position: absolute;
+    left:16px;
+    // width: 17px;
+    // height: 20px;
+}
+// %f14{
+//     font-size:14px;
+// }
+@mixin setwh($w,$h){
+    width: $w;
+    height:$h;
+}
 nav{
     width: 100%;
     height:38px; 
     border-bottom:2px solid #BC338B;   
-}
-.nav{
-    height: 38px;
-}
-.nav_l>li{
-    position:relative;
-    float:left;
+    .nav{
+        height: 38px;
+        .nav_l{
+            &>li{
+                position:relative;
+                float:left;
+                &>a{
+                    display:block;
+                    width: 111px;
+                    height: 36px;
+                    font-size: 16px;
+                    color:black;
+                    line-height: 38px;
+                    text-align:center;
+                    &:hover{
+                        color:#BC338B;
+                    }
+                }
+            }
+            li:nth-child(1):hover{
+                .nav2{
+                    display:block;
+                }
+            }    
+            i{  
+                display:inline-block;
+                width: 21px;
+                height: 16px;
+                background: red;
+                margin:10px 11px 0 8px;
+            }
+            span{
+                float:left;
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 18px;
+                color:#FFFFFF;
 
-}
-.nav_l{
-    i{  
-        display:inline-block;
-        width: 21px;
-        height: 16px;
-        background: red;
-        margin:10px 11px 0 8px;
+            }
+            .nav_subTit{
+                height: 30px;
+                font-size:12px;
+                margin-left: 12px;
+                margin-top:4px;
+            }
+            &>a:hover{
+                color: #fff;
+                background: #bc338b;
+            }
+            .nav2{
+                position:absolute;
+                top:40px;
+                width: 240px;
+                height: 400px;
+                background: #183b8c;
+                z-index:100;
+                .nav2_t{   
+                    @include setwh(240px,156px);       
+                    .nav2_t_div{
+                        @include setwh(174px,156px);
+                        @extend %PM;
+                        img{
+                            @extend %img-icon;
+                        }    
+                        a{
+                            color:#FFFFFF;
+                            font-size:14px;
+                        }
+                        .nav2_t_div_a{
+                            font-size:16px;
+                        }
+                        .nav2_t_div_span{
+                            margin-top: 12px;
+                            .span_a{
+                                display:block;
+                                float:left;
+                                height:20px;
+                                line-height: 20px;
+                                margin-bottom: 4px;
+                                padding-right: 20px;
+                            }
+                        }
+
+                    }
+                    .nav3_t{
+                        @extend %nav3;
+
+                    }
+                    &:hover{
+                        background: #FFFFFF;
+                        a{
+                            color:#183b8c;
+                        } 
+                        .nav3_t{
+                            display:block;
+                            .nav3_tbox{
+                                .nav3_tbox_l{
+                                    width:470px;
+                                    height: 400px;
+                                    .nav_box {
+                                        margin: 2px 0px 10px 14px;
+                                        width: 47%;
+                                        float: left;
+                                        min-height: 192px;
+                                        h4{
+                                            height: 30px;
+                                            line-height: 30px;
+                                            font-size:14px;
+                                            margin-left: 6px;
+                                        }
+                                        li{
+                                            float: left;
+                                            width: 60px;
+                                            height: 20px;
+                                            font-size: 12px;
+                                            color: gray;
+                                            margin: 4px;
+                                            line-height: 20px;
+                                            text-align: center;
+                                            border: 1px dashed gainsboro;
+                                            a{
+                                                display:block;
+                                                height:15px;
+                                                color: inherit;
+                                            }
+                                        }
+                                    } 
+                                }  
+                                .nav3_tbox_r{
+                                    width:277px;
+                                    height: 400px;
+                                    &>div{
+                                        height: 200px;
+                                        h4{
+                                            height: 30px;
+                                            line-height: 30px;
+                                            font-size:14px;
+                                            margin-left: 6px; 
+                                        }
+                                        a{
+                                            float:left;
+                                            margin-left: 4px;
+                                            img{
+                                                width: 240px;
+                                                height: 120px;
+                                            }
+                                        }
+                                    }
+                                }   
+                            }
+                        }
+                    }
+                }       
+                .nav2_c{
+                    @include setwh(240px,133px);
+                    .nav2_c_div{
+                        @include setwh(174px,133px);
+                        @extend %PM; 
+                        img{
+                            @extend %img-icon;
+                        }      
+                        a{
+                            color:#FFFFFF;
+                            font-size:14px;
+                        } 
+                        .nav2_c_div_a{
+                            font-size:16px;
+                        }  
+                        .nav2_c_div_span{
+                            margin-top: 12px;
+                            .span_a{
+                                display:block;
+                                float:left;
+                                height:20px;
+                                line-height: 20px;
+                                margin-bottom: 4px;
+                                padding-right: 20px;
+                            }
+                        }
+           
+                    }
+                    .nav3_c{
+                        @extend %nav3;
+                    }
+                    &:hover{
+                        background: #FFFFFF;
+                        a{
+                            color:#183b8c;
+                        }  
+                        .nav3_c{
+                            display:block;
+                            .nav3_tbox{
+                                .nav3_tbox_l{
+                                    width:470px;
+                                    height: 400px;
+                                    .nav_box {
+                                        margin: 2px 0px 10px 14px;
+                                        width: 47%;
+                                        float: left;
+                                        min-height: 192px;
+                                        h4{
+                                            height: 30px;
+                                            line-height: 30px;
+                                            font-size:14px;
+                                            margin-left: 6px;
+                                        }
+                                        li{
+                                            float: left;
+                                            width: 60px;
+                                            height: 20px;
+                                            font-size: 12px;
+                                            color: gray;
+                                            margin: 4px;
+                                            line-height: 20px;
+                                            text-align: center;
+                                            border: 1px dashed gainsboro;
+                                            a{
+                                                display:block;
+                                                height:15px;
+                                                color: inherit;
+                                            }
+                                        }
+                                    } 
+                                }  
+                                .nav3_tbox_r{
+                                    width:277px;
+                                    height: 400px;
+                                    &>div{
+                                        height: 200px;
+                                        h4{
+                                            height: 30px;
+                                            line-height: 30px;
+                                            font-size:14px;
+                                            margin-left: 6px; 
+                                        }
+                                        a{
+                                            float:left;
+                                            margin-left: 4px;
+                                            img{
+                                                width: 240px;
+                                                height: 120px;
+                                            }
+                                        }
+                                    }
+                                }   
+                            }
+                        }
+                    }
+                }
+                .nav2_b{
+                    @include setwh(240px,109px);
+                    .nav2_b_div{
+                        @include setwh(174px,109px);
+                        @extend %PM;
+                        img{
+                            @extend %img-icon;
+                        }  
+                        a{
+                            color:#FFFFFF;
+                            font-size:14px;
+                        } 
+                        .nav2_b_div_a{
+                            font-size:16px;
+                        }
+                        .nav2_b_div_span{
+                            margin-top: 12px;
+                            .span_a{
+                                display:block;
+                                float:left;
+                                height:20px;
+                                line-height: 20px;
+                                margin-bottom: 4px;
+                                padding-right: 18px;
+                            }
+                        }
+                    }
+                    .nav3_b{
+                        @extend %nav3;
+                    }
+                    &:hover{
+                        background: #FFFFFF;
+                        a{
+                            color:#183b8c;
+                        } 
+                        .nav3_b{
+                            display:block;
+                            .nav3_tbox{
+                                .nav3_tbox_l{
+                                    width:470px;
+                                    height: 400px;
+                                    .nav_box {
+                                        margin: 2px 0px 10px 14px;
+                                        width: 47%;
+                                        float: left;
+                                        min-height: 192px;
+                                        h4{
+                                            height: 30px;
+                                            line-height: 30px;
+                                            font-size:14px;
+                                            margin-left: 6px;
+                                        }
+                                        li{
+                                            float: left;
+                                            width: 60px;
+                                            height: 20px;
+                                            font-size: 12px;
+                                            color: gray;
+                                            margin: 4px;
+                                            line-height: 20px;
+                                            text-align: center;
+                                            border: 1px dashed gainsboro;
+                                            a{
+                                                display:block;
+                                                height:15px;
+                                                color: inherit;
+                                            }
+                                        }
+                                    } 
+                                }  
+                                .nav3_tbox_r{
+                                    width:277px;
+                                    height: 400px;
+                                    &>div{
+                                        height: 200px;
+                                        h4{
+                                            height: 30px;
+                                            line-height: 30px;
+                                            font-size:14px;
+                                            margin-left: 6px; 
+                                        }
+                                        a{
+                                            float:left;
+                                            margin-left: 4px;
+                                            img{
+                                                width: 240px;
+                                                height: 120px;
+                                            }
+                                        }
+                                    }
+                                }   
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-    span{
-        float:left;
-        display: inline-block;
-        vertical-align: middle;
-        font-size: 18px;
-        color:#FFFFFF;
-
-    }
-    .nav_subTit{
-        height: 30px;
-        font-size:12px;
-        margin-left: 12px;
-        margin-top:4px;
-    }
-    &>a:hover{
-        color: #fff;
-        background: #bc338b;
-    }
-}
-.nav_l>li>a{
-    display:block;
-    width: 111px;
-    height: 36px;
-    font-size: 16px;
-    color:black;
-    line-height: 38px;
-    text-align:center;
-}
-.nav_l>li>a:hover{
-    color:#BC338B;
 }
 
 
-
-
-
-
-// .nav2{
-//     width: 240px;
-//     height: 400px;
-//     position:absolute;
-//     background: #183b8c;
-//     .nav2_li1{
-//         width: 240px;
-//         height: 150px;
-//         .nav2_li1_div {
-//             padding: 15px 12px;
-//             width: 150px;
-//             font-size: 14px;
-//             margin: 0 auto;
-//             .nav2_li1_div_a{
-//                 display: inline !important;
-//                 position: absolute;
-//                 top: 0px;
-//                 left: 15px;
-//                 font-size:16px;
-//                 line-height: 30px;
-//                 margin-bottom: 20px;
-//                 img{
-//                     margin-right: 8px;
-//                 }
-//             }
-//             .nav2_li1_div_span{
-//                 position:absolute;
-//                 margin-bottom: 4px;
-//                 padding-right: 20px;
-//             }
-//         }
-//     }
-//     .nav2_li2{
-//         width: 240px;
-//         height: 150px;
-//         .nav2_li2_div {
-//             padding: 15px 12px;
-//             width: 150px;
-//             font-size: 14px;
-//             margin: 0 auto;
-//             .nav2_li2_div_a{
-//                 display: inline !important;
-//                 position: absolute;
-//                 top: 150px;
-//                 left: 15px;
-//                 font-size:16px;
-//                 line-height: 30px;
-//                 height: 30px;
-//                 img{
-//                     margin-right: 8px;
-//                     width: 17px;
-//                     height: 20px;
-//                 }
-//             }
-//             .nav2_li2_div_span{
-//                 margin-bottom: 4px;
-//                 padding-right: 20px;
-//             }
-//         }
-//     }
-// }
-// .nav2 a{
-//     font-size: 14px;
-//     height: 30px;
-//     color:white;
-//     line-height: 21px;
-// }
-// .nav2{
-//     // display:none;
-// }
-.nav_l li:nth-child(1):hover .nav2{
-    display:block;
-}
+// 右边导航栏
 .nav_r{
     width: 210px;
     height: 36px;
@@ -341,8 +594,18 @@ main{
     width: 100%;
     height: 2000px;
     background: orange;
-    #banner{
-        width:100%;
-        height: 400px;
-    }
+    .main{
+        position: relative;
+        
+        .login_box{
+            position:absolute;
+            top:-400px;
+            right:-43px;
+            width: 210px;
+            height: 400px;
+            background: blue;
+            z-index:300;
+
+        }
+    } 
 }
