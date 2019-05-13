@@ -539,7 +539,7 @@ nav{
 // main主题内容区
 main{
     width: 100%;
-    height: 4600px;
+    height: 4700px;
     background: #FFFFFF;
     .main{
         position: relative;
@@ -1014,7 +1014,141 @@ main{
         .hangYeNews{
             width: 100%;
             height: 470px;
-            
+            margin: 70px auto 0;
+            background: #fff;
+            font-size: 14px;
+            .hangYeNews_tit{
+                font-size: 22px;
+                font-weight: 700;
+                padding-bottom: 5px;
+                border-bottom: 2px solid #183b8c;
+                a{
+                    float: right;
+                    font-size: 14px;
+                    color: #999;
+                    font-weight: 500;
+                }
+            }
+            .hangYeNews_info{
+                margin-top: 30px;
+                // 产业带最新动态
+                .hangYeNews_info_rank{
+                    width: 215px;
+                    float: left;
+                    &:first-child{
+                        margin-left: 0px;
+
+                    }
+                }
+                .hangYeNews_info_prmo{
+
+                    h3{
+                        font-size: 16px;
+                        color: #333;
+                        margin-bottom: 20px;
+                    }
+                    .hangYeNews_info_ad{
+                        cursor: -webkit-grab;
+                        width: 238px;
+                        height: 298px;
+                        overflow: hidden;
+                        position: relative;
+                        margin-top: 10px;
+                    }
+                    .swiper-container{
+                        margin-left: auto;
+                        margin-right: auto;
+                        position: relative;
+                        overflow: hidden;
+                        z-index: 1;
+                        .swiper-wrapper{
+                        transform: translate3d(-536px, 0px, 0px);
+                        transition-duration: 0ms;
+                        }
+                    }
+                }
+                // 热门资讯和成功案例
+                .hangYeNews_info_news{
+                    width: 420px;
+                    margin-left: 60px;
+                    h3 {
+                        font-size: 16px;
+                        color: #333;
+                        margin-bottom: 20px;
+                    }
+                    .hangYeNews_info_newsListCon{
+                        display: block;
+                        width: 100%;
+                        margin-top: 10px;
+                        .hangYeNews_info_newsListImg{
+                            width: 180px;
+                            img{
+                                width: 100%;
+                                height: 125px;
+                            }
+                        }
+                        &>div{
+                            float:left;
+                        }
+                        .hangYeNews_info_newsList{
+                            width: 230px;
+                            margin-left: 10px;
+                            .hangYeNews_info_newsListTit{
+                                font-size: 16px;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                width: 100%;
+                                white-space: nowrap;
+                                color:black;
+                            }
+                            .hangYeNews_info_newsListTxt{
+                                margin-top: 10px;
+                                color: #999;
+                                line-height: 1.2;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 2;
+                                overflow: hidden;
+                            }
+                            .hangYeNews_info_newsListDate{
+                                color: #999;
+                                margin-top: 12px;
+                                .date{
+                                    font-size:12px;
+                                }
+                            }
+                        }
+                    } 
+                    .hangYeNews_info_newsInfoList{
+                        margin-top: 10px;
+                        .dopt {
+                            font-size: 12px;
+                            margin-right: 10px;
+                        }
+                        &>a>span {
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        .hangYeNews_info_newsInfoTxt{
+                            width: 310px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        .date{
+                            color: #999;
+                            float: right;
+                        }
+                        &>a{
+                            display: block;
+                            border-bottom: 1px dashed #ccc;
+                            padding: 9px 0;
+                            color:black;
+                        }
+
+                    }  
+                }
+            }
         }
         // 合作伙伴
         .partners{

@@ -509,7 +509,7 @@ nav .nav .nav_l .nav2 .nav2_b:hover .nav3_b .nav3_b_box .nav3_b_box_r > div a im
 
 main {
   width: 100%;
-  height: 4600px;
+  height: 4700px;
   background: #FFFFFF;
 }
 main .main {
@@ -966,6 +966,134 @@ main .main .shouShiChanDi .shoushiChanDi_production .shoushiChanDi_production_li
 main .main .hangYeNews {
   width: 100%;
   height: 470px;
+  margin: 70px auto 0;
+  background: #fff;
+  font-size: 14px;
+}
+main .main .hangYeNews .hangYeNews_tit {
+  font-size: 22px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #183b8c;
+}
+main .main .hangYeNews .hangYeNews_tit a {
+  float: right;
+  font-size: 14px;
+  color: #999;
+  font-weight: 500;
+}
+main .main .hangYeNews .hangYeNews_info {
+  margin-top: 30px;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_rank {
+  width: 215px;
+  float: left;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_rank:first-child {
+  margin-left: 0px;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_prmo h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_prmo .hangYeNews_info_ad {
+  cursor: -webkit-grab;
+  width: 238px;
+  height: 298px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 10px;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_prmo .swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_prmo .swiper-container .swiper-wrapper {
+  transform: translate3d(-536px, 0px, 0px);
+  transition-duration: 0ms;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news {
+  width: 420px;
+  margin-left: 60px;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news .hangYeNews_info_newsListCon {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news .hangYeNews_info_newsListCon .hangYeNews_info_newsListImg {
+  width: 180px;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news .hangYeNews_info_newsListCon .hangYeNews_info_newsListImg img {
+  width: 100%;
+  height: 125px;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news .hangYeNews_info_newsListCon > div {
+  float: left;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news .hangYeNews_info_newsListCon .hangYeNews_info_newsList {
+  width: 230px;
+  margin-left: 10px;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news .hangYeNews_info_newsListCon .hangYeNews_info_newsList .hangYeNews_info_newsListTit {
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  color: black;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news .hangYeNews_info_newsListCon .hangYeNews_info_newsList .hangYeNews_info_newsListTxt {
+  margin-top: 10px;
+  color: #999;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news .hangYeNews_info_newsListCon .hangYeNews_info_newsList .hangYeNews_info_newsListDate {
+  color: #999;
+  margin-top: 12px;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news .hangYeNews_info_newsListCon .hangYeNews_info_newsList .hangYeNews_info_newsListDate .date {
+  font-size: 12px;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news .hangYeNews_info_newsInfoList {
+  margin-top: 10px;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news .hangYeNews_info_newsInfoList .dopt {
+  font-size: 12px;
+  margin-right: 10px;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news .hangYeNews_info_newsInfoList > a > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news .hangYeNews_info_newsInfoList .hangYeNews_info_newsInfoTxt {
+  width: 310px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news .hangYeNews_info_newsInfoList .date {
+  color: #999;
+  float: right;
+}
+main .main .hangYeNews .hangYeNews_info .hangYeNews_info_news .hangYeNews_info_newsInfoList > a {
+  display: block;
+  border-bottom: 1px dashed #ccc;
+  padding: 9px 0;
+  color: black;
 }
 main .main .partners {
   width: 100%;
