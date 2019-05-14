@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/base_px.css" />
         <link rel="stylesheet" type="text/css" href="css/swiper.css" />
+        <link rel="stylesheet" type="text/css" href="img/icon/iconfont.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
     </head>
     <body>
@@ -30,9 +31,9 @@
                         <dd class="topnav_line"></dd>
                     </dl>
                     <dl class="topnav_r fr">
-                        <dd>
-                            <h2><a href="#">我的批发户<i class="commom-icon1"></i></a></h2>
-                            <ul>
+                        <dd style="position:relative;">
+                            <h2><a href="#">我的批发户<i></i></a></h2>
+                            <ul style="position:absolute;">
                                 <li>
                                     <a href="#">我的订单</a>
                                 </li>
@@ -70,7 +71,7 @@
                         <dd class="topnav_line"></dd>
                         <dd>
                             <h2><a href="#">收藏夹<i class="commom-icon1"></i></a></h2>
-                            <ul style="width:auto;">
+                            <ul style="width:110px;">
                                 <li style="text-align:center;">
                                         <a href="javascript:;" onclick="GetLoginAndloginister()">收藏的货品</a>
                                 </li>
@@ -89,15 +90,19 @@
                         </dd>
                         <dd class="topnav_line"></dd>
                         <dd>
-                            <h2><a href="#">平台客服<i class="commom-icon1"></i></a></h2>
-                            <ul style="width:auto;right: 3px;">
-                                <li style="text-align:center;">
-                                    <a target="_blank" href="#">卖家客服</a>
-                                </li>
-                                <li style="text-align:center;">
-                                    <a target="_blank" href="#">买家客服</a>
-                                </li>
-                            </ul>
+                            <h2>
+                                <a href="#">平台客服
+                                    <i></i>
+                                    <ul style="width:110px;right: 3px;">
+                                        <li style="text-align:center;">
+                                            <a target="_blank" href="#">卖家客服</a>
+                                        </li>
+                                        <li style="text-align:center;">
+                                            <a target="_blank" href="#">买家客服</a>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </h2>
                         </dd>
                     </dl>
                 </div>
@@ -136,11 +141,19 @@
 
                     <div class="cart fl">
                         <div class="cart_item">
-                            <!-- 购物车 -->
+                            <em>
+                                <a href="#">进货单</a>
+                                <span id="cartCount">(0)</span>
+                            </em>
                         </div>
                     </div>
                     <div class="shujubao fl">
-                        
+                        <div class="shujubao_item">
+                            <em>
+                                <a href="#">数据包</a>
+                                <span id="cartCount">(0)</span>
+                            </em>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1583,9 +1596,10 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- 右边hover图 -->
                             <div class="fashionshop_recommonedPP">
                                 <h2>精选商家</h2>
-                                <!-- test 1 -->
                                 <div class="RE_slidePP mt15 ui_scroll_section">
                                     <ol curstyle="RE_slide_pageCur" class="RE_slide_page ui_scroll_page">
                                         <li class="active">0</li>
@@ -2039,7 +2053,7 @@
 
                     <!-- 适销平台  -->
                     <div class="saletai fashionshop">
-                        <p class="fashionshop_tit clearfix">时尚饰品<a target="_blank" href="https://www.pfhoo.com/jewelry" class="moreLink">更多配饰精品&gt;&gt;</a></p>
+                        <p class="fashionshop_tit clearfix">适销平台<a target="_blank" href="https://www.pfhoo.com/jewelry" class="moreLink">更多配饰精品&gt;&gt;</a></p>
                         <div class="fashionshop_box clearfix">
                             <div class="fashionshop_banner">
                                 <a target="_blank" href="#"><img src="img/banner/24cda240-37a6-46ea-be26-03a64fbb01b71.jpeg" alt="时尚饰品"></a>
@@ -3025,6 +3039,58 @@
 
             <!--  右边导航栏 -->
             <div id="sider">
+                <div class="sidebar_nav">
+                    <div class="e-sidebar-b">
+                        <a href="#" id="user">
+                            <i class="icon iconfont icon-user1"></i>
+                        </a>
+                        <ul class="e-sidebar-tab">
+                            <li id="sidebarchart" class="e-sidebar-boder">
+                                <a href="#" class="e-shop-wrap e-nav-wrap">
+                                     <img src="img/shop_pic/receipt1.png" height="23" width="25">
+                                     <i id="rightseven" class="e-icon e-icon-shop"></i>
+                                     <p>进货单</p>
+                                     <span id="J_sidebar_shop_num" style="display: inline-block;">0</span>
+                                </a>
+                            </li>
+                            <li class="e-sidebar-item">
+                                    <a href="javascript:;" class="e-shop-wrap e-nav-wrap" text-content="我的收藏">
+                                        <i class="icon iconfont icon-shoucang"></i>
+                                    </a>
+                            </li>
+                            <li class="e-sidebar-item">
+                                <a target="_blank" href="#" class="e-shop-wrap e-nav-wrap" text-content="客服QQ">
+                                    <i class="icon iconfont icon-qq" style="text-align:center;"></i>
+                                </a>
+                            </li>
+                            <li class="e-sidebar-item">
+                                <div class="e-shop-wrap e-nav-wrap" text-content="400 860 5859">
+                                    <i class="icon iconfont icon-tel"></i>
+                                </div>
+                            </li>
+                            <li class="e-sidebar-item">
+                                <div class="e-shop-wrap e-nav-wrap" text-content="1">
+                                    <i class="icon iconfont icon-erweima"></i>
+                                </div>
+                            </li>
+                            <li class="e-sidebar-item">
+                                <div class="e-shop-wrap e-nav-wrap" text-content="敬请期待">
+                                    <i class="icon iconfont icon-youhuiquan"></i>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul id="backtop">
+                            <li>返回顶部</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="e-sidebar-panel">
+                       
+                </div>
+            </div>
+
+
+            <!-- <div id="sider">
                 <div class="sidebar-nav">
                     <div class="e-sidebar-b">
                             <a href="#" id="user" style="height:35px;text-align:center;border-bottom:0px;">
@@ -3083,7 +3149,7 @@
                 </div>
                 <div class="e-sidebar-panel">       
                 </div>
-            </div> 
+            </div>  -->
 
 
         </div>
@@ -3127,6 +3193,26 @@
                                   .css('display','none');
                 })
              });
+
+            // 每一栏右边展览滚动图
+             // $(function(){
+             //    $('.ui_scroll_page li').hover(function(){
+                
+             //        $(this).attr('class','active')
+             //                .siblings()
+             //                .attr('class','');
+             //        $('.ui_scroll_con .RE_ppBox').eq($(this).index())
+             //                      .css('display', 'block')
+             //                      .siblings()
+             //                      .css('display','none');
+             //    })
+             // });
+        </script>
+        <script src="js/myquery-Ui.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            var backtop = document.getElementById('backtop');
+            //需求：滚动到300px的时候，就出现回到顶部按钮，点击按钮就可以快速回到顶部
+            toSlowtop(backtop,400,140);
         </script>
 
 </html>

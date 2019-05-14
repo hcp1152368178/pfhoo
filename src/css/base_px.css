@@ -154,12 +154,15 @@ s,i,em{
     display: none;
     text-align: right;
     right: -13px;
+    width: 329px;
+    height: 0;
 }
-/*.topnav_r dd ul li{
+.topnav_r dd:first-child ul li{
     float: left;
-    width: 30px;
-    height: 20px;
-}*/
+    width: 92px;
+    height: 29px;
+    text-align: right;
+}
 .topnav_r dd a{
     color:#000000;
     font-size: 14px;
@@ -168,8 +171,14 @@ s,i,em{
     display:block;
     padding:0 25px 0 15px;
 }
+/*.topnav_r dd h2 i{
+    display:inline-block;
+    width:20px;
+    height:20px;
+}*/
 .topnav_r dd:hover ul{
     display:block;
+    height: 119px;
 }
 .topnav_r dd h2:hover{
     background: #FFFFFF;

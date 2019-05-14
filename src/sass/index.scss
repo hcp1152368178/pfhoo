@@ -1,7 +1,72 @@
 @charset "utf-8";
 *{margin: 0;padding: 0;box-size:border-box;}
 #topnav{
-    background:#F5F5F5 ;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    // border-bottom: 1px solid #e5e5e5;
+    background: #F5F5F5;
+    .topnav_line{
+        width: 1px;
+        height: 16px;
+        background:#555555;
+        margin: 7px 12px 0;
+    }
+    .topnav_l{
+        float:left;
+        dd{
+            z-index:1003;
+            .login-please{
+                display: block;
+                color: inherit;
+            }
+        }
+    }
+    .topnav_r{
+        float:right;
+        dd{
+            position:relative;
+            z-index:1003; 
+            ul{
+                position:absolute;
+                display:none;
+                top: 31px;
+                box-sizing: border-box;
+                border: 1px solid #e5e5e5;
+                border-top: 1px solid #ababab;
+                background: #fff;
+                display: none;
+                text-align: right;
+                right: -13px;
+                width: 329px;
+                height: 0;
+            }
+            a{
+                color:#000000;
+                font-size: 14px;
+            }
+            h2{
+                padding:0 25px 0 15px;
+                a:hover{
+                    background: #FFFFFF;
+                    color:#BC338B;   
+                }
+            }
+        }
+        dd:first-child ul li{
+            float: left;
+            width: 92px;
+            height: 29px;
+            text-align: right;
+        }
+        dd:hover ul{
+            display:block;
+            height: auto;
+            a:hover{
+                color:#BC338B;
+            }
+        }  
+    }
 }
 // header头部
 #header{
@@ -36,7 +101,7 @@
                 padding: 0;
                 border: 0;
                 overflow: hidden;
-                margin-bottom: 7px;
+                margin-bottom: 5px;
                 li{
                     float: left;
                     padding:0 5px;
@@ -118,11 +183,25 @@
                 border: none;
                 background-color: #bc338b;
                 margin-top: 58px;
-                border: 2px solid #eee;
                 .cart_item{
-                    width: 200px;
+                    color: #fff;
+                    width: 135px;
                     height: 36px;
                     background: url(../img/shop_pic/receipt1.png) 15px center no-repeat;
+                    em{
+                        margin-left: 20px;
+                        display: block;
+                        font-size: 16px;
+                        line-height: 36px;
+                        a{
+                            margin-left: 26px;
+                            color:#FFFFFF;
+                            font-size: 15px;
+                        }
+                        #cartCount{
+                            font-size:12px;
+                        }
+                    }
                 }
                 
         }
@@ -133,6 +212,27 @@
             border: none;
             background-color: #1c3a8b;
             margin-top: 58px;
+            z-index: 1002;
+            .shujubao_item{
+                color: #fff;
+                width: 135px;
+                height:36px;
+                background: url(../img/shop_pic/receipt2.png) 15px center no-repeat;
+                em{
+                    margin-left: 20px;
+                    display: block;
+                    font-size: 16px;
+                    line-height: 36px;
+                    a{
+                        margin-left: 26px;
+                        color:#FFFFFF;
+                        font-size: 15px;
+                    }
+                    #cartCount{
+                        font-size:12px;
+                    }
+                }
+            }
         }
 
     }
@@ -1268,3 +1368,107 @@ footer{
     }
 }
 
+#sider{
+    position: fixed;
+    right: -280px;
+    top: 0;
+    width: 315px;
+    z-index: 1010;
+    display: block;
+    height: 100%;
+    .sidebar_nav{
+        width: 35px;
+        left: 0;
+        top: 0;
+        background-color: #0c1839;
+        position: absolute;
+        height: 100%;
+        .e-sidebar-b {
+            left: 0;
+            top: 55%;
+            margin-top: -200px;
+            position: absolute;
+            width: 35px;
+            &>a{
+                height: 20px;
+                text-align: center;
+                border-bottom: 0px;
+                &>i{
+                    display: inline-block;
+                    font-size: 28px;
+                    color: #fff;                 
+                    background: #0c1839;
+                    margin-left: 3px;
+                }
+            }
+            .e-sidebar-tab{
+                .e-sidebar-boder {
+                    border-top: 1px solid #fff;
+                    border-bottom: 1px solid #fff;
+                    .e-nav-wrap {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        color: #fff;
+                        text-align: center;
+                        margin-left: 10px
+                        img{
+                            display:block;
+                            width: 25px;
+                            height: 23px;
+                            margin:0 5px;
+                        }
+                        p{
+                            margin:5px 5px 0 5px;
+                            width: 25px;
+                            font-size:14px;
+                        }
+                        span {
+                            width: 20px;
+                            height: 20px;
+                            line-height: 20px;
+                            margin: 7px 0 10 8px;
+                            border-radius: 50%;
+                            color: #0c1839;
+                            background-color: #fff;
+                        }
+                    }
+                }
+                .e-sidebar-item{
+                    .icon-shoucang{
+                        display:inline-block;
+                        margin-top: 10px;
+                        width: 25px;
+                    }
+                    .icon-qq{
+                        display:inline-block;
+                        margin-top: 10px;
+                        width: 25px;
+                    }
+                }
+            }
+            #backtop{
+                margin-top: 120px;
+                margin-left: 5px;
+                display:none;
+                li{
+                    width: 25px;
+                    font-size:12px;
+                    color:#0c1839;
+                    background: #FFFFFF;
+                    border:1px dashed #ccc;
+                    text-align:center;
+                    cursor: pointer;
+
+                }
+            }
+        }
+    }
+    .e-sideabr-panel{
+        width: 280px;
+        left: 35px;
+        top: 0;
+        background-color: #fff;
+        position: absolute;
+        height: 100%;
+    }
+}
