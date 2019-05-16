@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../css/base_px.css" />
         <link rel="stylesheet" type="text/css" href="../img/icon/iconfont.css" />
-        <link rel="stylesheet" type="text/css" href="../css/index.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="../css/index.css" /> -->
         <link rel="stylesheet" type="text/css" href="../css/cart.css" />
     </head>
     <body>
@@ -196,7 +196,7 @@
                 </article>
             </main>
 
-                        <!-- footer 底部-->
+            <!-- footer 底部-->
             <footer>
                 <article class="con">
                     <ul class="footer-main clearfix">
@@ -429,24 +429,26 @@
     </body>
     <script src="../js/myquery-Ui.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
-        var backtop = document.getElementById('backtop');
-        //需求：滚动到300px的时候，就出现回到顶部按钮，点击按钮就可以快速回到顶部
-        toSlowtop(backtop,400,140);
-
+         // 结算栏吸底
         var pay = document.getElementById('pay');
             window.onscroll = function() {
                 var scrollTop = window.scrollY; //垂直方向的滚动距离
-                if(scrollTop <= 100) {
+                if(scrollTop <= 120) {
                     pay.style.display = 'block';
                     pay.style.position = 'fixed';
                     pay.style.bottom = 0;
                 }
-                if(scrollTop > 90) {
+                if(scrollTop > 120) {
                     pay.style.display = 'block';
                     pay.style.position = 'relative';
                     
                 }
             }
+    </script>
+    <script type="text/javascript">
+        var backtop = document.getElementById('backtop');
+        //需求：滚动到300px的时候，就出现回到顶部按钮，点击按钮就可以快速回到顶部
+        toSlowtop(backtop,400,140);
     </script>
     <script src="../js/common.js" type="text/javascript"></script>   
     
