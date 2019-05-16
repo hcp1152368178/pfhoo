@@ -431,25 +431,26 @@
     <script type="text/javascript">
          // 结算栏吸底
         var pay = document.getElementById('pay');
+        var backtop = document.getElementById('backtop');
             window.onscroll = function() {
                 var scrollTop = window.scrollY; //垂直方向的滚动距离
-                if(scrollTop <= 120) {
+                if(scrollTop <= 100) {
                     pay.style.display = 'block';
                     pay.style.position = 'fixed';
                     pay.style.bottom = 0;
                 }
-                if(scrollTop > 120) {
+                if(scrollTop > 80) {
                     pay.style.display = 'block';
                     pay.style.position = 'relative';
-                    
                 }
+                toSlowtop(backtop,400,140);
             }
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         var backtop = document.getElementById('backtop');
         //需求：滚动到300px的时候，就出现回到顶部按钮，点击按钮就可以快速回到顶部
         toSlowtop(backtop,400,140);
-    </script>
+    </script> -->
     <script src="../js/common.js" type="text/javascript"></script>   
     
 </html>
