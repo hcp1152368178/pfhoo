@@ -644,7 +644,7 @@ main{
     .main{
         position: relative;
         // banner 右边的登陆信息框
-        .login_box{
+        #login_box{
             position:absolute;
             top:-470px;
             right:-43px;

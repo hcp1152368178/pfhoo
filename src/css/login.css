@@ -53,7 +53,7 @@ main {
       display: block;
       width: 360px;
       height: 248px; }
-      #loginbox #loginbox_bd form #user, #loginbox #loginbox_bd form #psw {
+      #loginbox #loginbox_bd form #user, #loginbox #loginbox_bd form #user2, #loginbox #loginbox_bd form #psw {
         display: block;
         width: 360px;
         height: 36px;
@@ -92,7 +92,7 @@ main {
           display: inline-block;
           font-size: 14px;
           margin-left: 5px; }
-      #loginbox #loginbox_bd form #login {
+      #loginbox #loginbox_bd form #login, #loginbox #loginbox_bd form #login2 {
         width: 100%;
         height: 40px;
         margin-top: 35px;

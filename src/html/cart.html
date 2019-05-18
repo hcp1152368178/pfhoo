@@ -22,11 +22,11 @@
                             <a class="login-please"> 欢迎来到批发户!&nbsp;&nbsp;&nbsp;</a>
                         </dd>
                         <dd>
-                            <a href="html/login.html" class="login-please" style="color:#bc338b">请登录</a>
+                            <a href="./login.html" class="login-please" style="color:#bc338b">请登录</a>
                         </dd>
                         <dd class="topnav_line"></dd>
                         <dd class="">
-                            <a href="html/reg.html" class="loginister-please">免费注册</a>
+                            <a href="./reg.html" class="loginister-please">免费注册</a>
                         </dd>
                         <dd class="topnav_line"></dd>
                     </dl>
@@ -160,11 +160,190 @@
                             </div>
                         </div>
 
-                        <div class="myreceipt">
-                            <dl>
+                        <!-- <script>
+                            $("#Explain").click(function(){
+                                $("#ExplainShow").toggle();
+                            });
+                        </script> -->
+
+                        <!-- 购物车清单 -->
+                        <div id="myreceipt">
+                            <dl id="kong">
                                 <div>
                                     <img src="../img/bg/emptycart.jpg" height="114" width="240" alt="" />
                                 </div>
+                            </dl>
+                            
+                            <dl id="you">
+                                <dt>
+                                    <div class="myreceipt-warehouse">
+                                        <div class="myreceipt-checks checked">
+                                            <input type="checkbox" id="allgoods"/>店铺名称： 深圳市莱卡尼贸易有限公司 
+                                        </div> 
+                                        <!-- <div style="position:relative;display:none;" id="ExplainShow">
+                                        </div> -->
+                                    </div>
+                                    <table class="myreceipt-table-item">
+                                        <tbody>
+                                            <tr>
+                                                <td class="td1">
+                                                    货品
+                                                </td>
+                                                <td class="td2">
+                                                    数量
+                                                </td>
+                                                <td class="td3">
+                                                    库存
+                                                </td>
+                                                <td class="td4">
+                                                    单价
+                                                </td>
+                                                <td class="td5">
+                                                    区间价（折扣价）
+                                                </td>
+                                                <td class="td6">
+                                                    金额
+                                                </td>
+                                                <td class="td7">
+                                                    操作
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <ul class="myreceipt-tables">
+                                        <li>
+                                            <div class="myreceipt-tables-t">
+                                                <div class="myreceipt-check checked" wpname="wp_1" name="spucheck" id="spucheck_7668488" value="7668488">
+                                                    <input type="checkbox" name="icheck"/>  水晶来自施华洛世奇元素   S925纯银蝴蝶戒指
+                                                </div>
+                                                <a href="javascript:" onclick="deleteSPU(7668488,)"><i class="classification-c3"></i>删除所有</a>
+                                            </div>
+                                            <table class="myreceipt-table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="td1">
+                                                            <a href="/p/7668488.html" class="myreceipt-photo"><img src="https://cdnimg.pfhoo.com/Pro/s/20180623/4c1da3fd-a422-48ab-9aff-896bc91bec93.jpg"></a>
+                                                            <div class="myreceipt-words">
+                                                                <p><span>镶嵌物颜色/戒指大小/</span>  <span style="margin-left:30px;">天蓝色/可调节/镀白金</span></p>
+                                                                <span><a href="/p/7668488.html">SVR287-A</a></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="td2">
+                                                            <div class="the-addsub">
+                                                                <div class="the-sub detail-d2" onclick="cartsub('cart_5871945',5871945,7668488,92817,'')"></div>
+                                                                <input type="text" class="the-num" name="spu_7668488" id="cart_5871945" price="39.99" savalue="5871945" value="1" productid="7668488" proid="92817" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                                                                <input type="hidden" id="count_5871945" value="1">
+                                                                <div class="the-add detail-d1" onclick="cartadd('cart_5871945',5871945,7668488,92817,'')"></div>
+                                                            </div>
+
+                                                        </td>
+                                                        <td class="td3">
+                                                            154
+                                                        </td>
+                                                            <td class="td4">
+                                                                ￥ <span id="price_5871945">39.99</span>
+                                                            </td>
+                                                        <td class="td5">
+                                                            <ul class="myreceipt-area-price">
+                                                                <li>
+                                                                    <span>≥1</span>&nbsp;&nbsp;&nbsp;<em>39.99</em><b></b>
+                                                                </li>   
+                                                            </ul>
+
+                                                        </td>
+                                                        <td class="td6">
+                                                                <b class="myreceipt-price">￥ <span id="totalSinglePrice_5871945">39.99</span></b>
+
+                                                            <input type="hidden" id="totalSingleweight_5871945" value="4.30">
+                                                        </td>
+                                                        <td class="td7">
+                                                            <a href="javascript:" onclick="deleteSku('92817-7668488-')" class="myreceipt-delete">删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td1">
+                                                            <a href="/p/7668488.html" class="myreceipt-photo"><img src="https://cdnimg.pfhoo.com/Pro/s/20180627/65e894a0-d2c3-4e13-b68d-c4b7ba5393ca.jpg"></a>
+                                                            <div class="myreceipt-words">
+                                                                <p><span>镶嵌物颜色/戒指大小/</span>  <span style="margin-left:30px;">粉色/可调节/镀白金</span></p>
+                                                                <span><a href="/p/7668488.html">SVR287-C</a></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="td2">
+
+                                                            <div class="the-addsub">
+                                                                <div class="the-sub detail-d2" onclick="cartsub('cart_5871947',5871947,7668488,92966,'')"></div>
+                                                                <input type="text" class="the-num" name="spu_7668488" id="cart_5871947" price="39.99" savalue="5871947" value="2" productid="7668488" proid="92966" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                                                                <input type="hidden" id="count_5871947" value="2">
+                                                                <div class="the-add detail-d1" onclick="cartadd('cart_5871947',5871947,7668488,92966,'')"></div>
+                                                            </div>
+
+                                                        </td>
+                                                        <td class="td3">
+                                                            111
+                                                        </td>
+                                                            <td class="td4">
+                                                                ￥ <span id="price_5871947">39.99</span>
+                                                            </td>
+                                                        <td class="td5">
+                                                            <ul class="myreceipt-area-price">
+                                                                <li>
+                                                                    <span>≥1</span>&nbsp;&nbsp;&nbsp;<em>39.99</em><b></b>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="td6">
+                                                                <b class="myreceipt-price">￥ <span id="totalSinglePrice_5871947">79.98</span></b>
+
+                                                            <input type="hidden" id="totalSingleweight_5871947" value="4.30">
+                                                        </td>
+                                                        <td class="td7">
+                                                            <a href="javascript:" onclick="deleteSku('92966-7668488-')" class="myreceipt-delete">删除</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td1">
+                                                            <a href="/p/7668488.html" class="myreceipt-photo"><img src="https://cdnimg.pfhoo.com/Pro/s/20180630/0d8cea93-ca81-412c-87ef-c861e01583e7.jpg"></a>
+                                                            <div class="myreceipt-words">
+                                                                <p><span>镶嵌物颜色/戒指大小/</span>  <span style="margin-left:30px;">粉色/可调节/镀玫瑰金</span></p>
+                                                                <span><a href="/p/7668488.html">SVR287-D</a></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="td2">
+
+                                                            <div class="the-addsub">
+                                                                <div class="the-sub detail-d2" onclick="cartsub('cart_5871948',5871948,7668488,92819,'')"></div>
+                                                                <input type="text" class="the-num" name="spu_7668488" id="cart_5871948" price="39.99" savalue="5871948" value="2" productid="7668488" proid="92819" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                                                                <input type="hidden" id="count_5871948" value="2">
+                                                                <div class="the-add detail-d1" onclick="cartadd('cart_5871948',5871948,7668488,92819,'')"></div>
+                                                            </div>
+
+                                                        </td>
+                                                        <td class="td3">
+                                                            29
+                                                        </td>
+                                                            <td class="td4">
+                                                                ￥ <span id="price_5871948">39.99</span>
+                                                            </td>
+                                                        <td class="td5">
+                                                            <ul class="myreceipt-area-price">
+                                                                <li>
+                                                                    <span>≥1</span>&nbsp;&nbsp;&nbsp;<em>39.99</em><b></b>
+                                                                </li>
+                                                            </ul>   
+                                                        </td>
+                                                        <td class="td6">
+                                                                <b class="myreceipt-price">￥ <span id="totalSinglePrice_5871948">79.98</span></b>
+                                                            <input type="hidden" id="totalSingleweight_5871948" value="4.30">
+                                                        </td>
+                                                        <td class="td7">
+                                                            <a href="javascript:" onclick="deleteSku('92819-7668488-')" class="myreceipt-delete">删除</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </li>
+                                    </ul>
+                                </dt>
                             </dl>
                         </div>
 
@@ -181,7 +360,7 @@
                                 <ul>
                                     <li><p id="spucount">种类：<i>0</i>种</p></li>
                                     <li><p id="skutotalcount">数量：<i>0</i>件</p></li>
-                                    <li><p id="alltotalweight">总重：<i>0.00</i>克</p></li>
+                                    <!-- <li><p id="alltotalweight">总重：<i>0.00</i>克</p></li> -->
                                 </ul>
                                 <p>货品金额总计（不含运费）</p>
                                 <b>￥<span id="totalprice">0.00</span></b>
@@ -438,12 +617,16 @@
                     pay.style.display = 'block';
                     pay.style.position = 'fixed';
                     pay.style.bottom = 0;
+                    pay.style.margin = 0;
                 }
-                if(scrollTop > 80) {
+                else if(scrollTop > 80) {
                     pay.style.display = 'block';
                     pay.style.position = 'relative';
+                    pay.style.marginBottom = 30 + 'px';
                 }
-                toSlowtop(backtop,400,140);
+                if(scroll > 400){
+                    toSlowtop(backtop,400,140);
+                }
             }
     </script>
     <!-- <script type="text/javascript">
@@ -452,5 +635,7 @@
         toSlowtop(backtop,400,140);
     </script> -->
     <script src="../js/common.js" type="text/javascript"></script>   
-    
+    <script type="text/javascript">
+         
+    </script>
 </html>

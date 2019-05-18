@@ -496,7 +496,7 @@ main {
   background: #FFFFFF; }
   main .main {
     position: relative; }
-    main .main .login_box {
+    main .main #login_box {
       position: absolute;
       top: -470px;
       right: -43px;
@@ -504,21 +504,21 @@ main {
       height: 400px;
       background: blue;
       z-index: 300; }
-      main .main .login_box .login_t {
+      main .main #login_box .login_t {
         width: 210px;
         height: 110px;
         background: #183b8c;
         color: #fff;
         text-align: center; }
-        main .main .login_box .login_t .login_t_title {
+        main .main #login_box .login_t .login_t_title {
           font-size: 22px;
           font-weight: 700;
           font-style: italic;
           padding-top: 5px; }
-        main .main .login_box .login_t .login_t_tip {
+        main .main #login_box .login_t .login_t_tip {
           font-size: 12px;
           padding-top: 8px; }
-        main .main .login_box .login_t .login_btn a {
+        main .main #login_box .login_t .login_btn a {
           display: block;
           background: #fff;
           border: none;
@@ -531,32 +531,32 @@ main {
           font-size: 12px;
           cursor: pointer;
           margin-left: 64px; }
-      main .main .login_box .login_b {
+      main .main #login_box .login_b {
         width: 210px;
         height: 290px;
         padding-top: 20px;
         background: url(../img/shop_pic/transparent95.png) 0 0 repeat; }
-        main .main .login_box .login_b .haochu {
+        main .main #login_box .login_b .haochu {
           padding-left: 14px;
           font-size: 16px; }
-          main .main .login_box .login_b .haochu a {
+          main .main #login_box .login_b .haochu a {
             display: block;
             margin-bottom: 20px; }
-            main .main .login_box .login_b .haochu a > table img {
+            main .main #login_box .login_b .haochu a > table img {
               display: inline;
               height: 28px;
               width: 28px; }
-            main .main .login_box .login_b .haochu a > table .td2 {
+            main .main #login_box .login_b .haochu a > table .td2 {
               padding-left: 10px; }
-              main .main .login_box .login_b .haochu a > table .td2 table {
+              main .main #login_box .login_b .haochu a > table .td2 table {
                 font-family: 微软雅黑;
                 vertical-align: middle; }
-                main .main .login_box .login_b .haochu a > table .td2 table .tr1 td {
+                main .main #login_box .login_b .haochu a > table .td2 table .tr1 td {
                   color: #545454;
                   font-size: 15px;
                   font-weight: bolder;
                   line-height: 15px; }
-                main .main .login_box .login_b .haochu a > table .td2 table .tr2 td {
+                main .main #login_box .login_b .haochu a > table .td2 table .tr2 td {
                   color: #808080;
                   font-size: 12px;
                   margin-left: 30px;
