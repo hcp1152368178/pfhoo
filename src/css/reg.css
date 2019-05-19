@@ -7,7 +7,8 @@
 */
 /*注册页头部标题*/
 .reg_title {
-  margin: 78px 0 0 10px; }
+  margin: 78px 0 0 10px;
+}
 
 /*注册页主要内容区*/
 main {
@@ -15,7 +16,8 @@ main {
   height: 560px;
   background: url(../img/bg/reg_bg_pic.jpg) -235px center no-repeat;
   /*背景图*/
-  position: relative; }
+  position: relative;
+}
 
 /*注册框*/
 #regbox {
@@ -26,99 +28,116 @@ main {
   top: 36px;
   right: 200px;
   z-index: 1000;
-  border: 1px solid #c6c6c6; }
-  #regbox #regbox_hd {
-    width: 438px;
-    height: 40px;
-    color: #BC338B;
-    background: #F5F8FA;
-    font-size: 14px;
-    text-align: center;
-    line-height: 40px; }
-  #regbox #regbox_bd {
-    width: 360px;
-    height: 398px;
-    margin: 0 39px;
-    padding: 25px 0 0; }
-    #regbox #regbox_bd .jianGe {
-      height: 24px;
-      line-height: 24px; }
-    #regbox #regbox_bd .jianGe2 {
-      height: 12px;
-      line-height: 12px; }
-    #regbox #regbox_bd #user, #regbox #regbox_bd #psw, #regbox #regbox_bd #repsw, #regbox #regbox_bd #yaoqingma, #regbox #regbox_bd #register {
-      display: block;
-      width: 360px;
-      height: 36px;
-      line-height: 36px;
-      border: 1px solid #c6c6c6;
-      padding: 0 0 0 10px;
-      color: #999; }
-    #regbox #regbox_bd #codebox {
-      width: 360px;
-      height: 36px; }
-    #regbox #regbox_bd #code {
-      display: block;
-      width: 188px;
-      height: 36px;
-      line-height: 36px;
-      border: 1px solid #c6c6c6;
-      padding: 0 0 0 10px;
-      color: #999; }
-    #regbox #regbox_bd #btncode {
-      display: block;
-      width: 160px;
-      height: 36px;
-      line-height: 36px;
-      border: 1px solid #c6c6c6;
-      margin-left: 10px;
-      color: #000000; }
-    #regbox #regbox_bd #tankuang {
-      position: absolute;
-      top: 38px;
-      right: 37px;
-      display: none;
-      width: 362px;
-      height: 400px;
-      background: #CCC; }
-      #regbox #regbox_bd #tankuang .input-val {
-        width: 255px;
-        background: #ffffff;
-        height: 2.8rem;
-        padding: 0 2%;
-        border-radius: 5px;
-        border: none;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        font-size: 1.0625rem;
-        margin-top: 150px; }
-      #regbox #regbox_bd #tankuang #canvas {
-        float: right;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 150px; }
-      #regbox #regbox_bd #tankuang .btn {
-        width: 360px;
-        height: 40px;
-        background: #f1f1f1;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin: 20px auto 0;
-        display: block;
-        font-size: 1.2rem;
-        color: #e22e1c;
-        cursor: pointer; }
-    #regbox #regbox_bd #agree {
-      font-size: 14px;
-      margin-left: 10px; }
-    #regbox #regbox_bd #xieyi {
-      margin-top: 20px; }
-      #regbox #regbox_bd #xieyi a {
-        font-size: 14px; }
-    #regbox #regbox_bd #register {
-      margin-top: 20px;
-      background: #BC338B;
-      color: #FFFFFF; }
+  border: 1px solid #c6c6c6;
+}
+#regbox #regbox_hd {
+  width: 438px;
+  height: 40px;
+  color: #BC338B;
+  background: #F5F8FA;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+}
+#regbox #regbox_bd {
+  width: 360px;
+  height: 398px;
+  margin: 0 39px;
+  padding: 25px 0 0;
+}
+#regbox #regbox_bd .jianGe {
+  height: 24px;
+  line-height: 24px;
+}
+#regbox #regbox_bd .jianGe2 {
+  height: 12px;
+  line-height: 12px;
+}
+#regbox #regbox_bd #user, #regbox #regbox_bd #psw, #regbox #regbox_bd #repsw, #regbox #regbox_bd #yaoqingma, #regbox #regbox_bd #register {
+  display: block;
+  width: 360px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #c6c6c6;
+  padding: 0 0 0 10px;
+  color: #999;
+}
+#regbox #regbox_bd #codebox {
+  width: 360px;
+  height: 36px;
+}
+#regbox #regbox_bd #code {
+  display: block;
+  width: 188px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #c6c6c6;
+  padding: 0 0 0 10px;
+  color: #999;
+}
+#regbox #regbox_bd #btncode {
+  display: block;
+  width: 160px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #c6c6c6;
+  margin-left: 10px;
+  color: #000000;
+}
+#regbox #regbox_bd #tankuang {
+  position: absolute;
+  top: 38px;
+  right: 37px;
+  display: none;
+  width: 362px;
+  height: 400px;
+  background: #CCC;
+}
+#regbox #regbox_bd #tankuang .input-val {
+  width: 255px;
+  background: #ffffff;
+  height: 2.8rem;
+  padding: 0 2%;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 1.0625rem;
+  margin-top: 150px;
+}
+#regbox #regbox_bd #tankuang #canvas {
+  float: right;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 150px;
+}
+#regbox #regbox_bd #tankuang .btn {
+  width: 360px;
+  height: 40px;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px auto 0;
+  display: block;
+  font-size: 1.2rem;
+  color: #e22e1c;
+  cursor: pointer;
+}
+#regbox #regbox_bd #agree {
+  font-size: 14px;
+  margin-left: 10px;
+}
+#regbox #regbox_bd #xieyi {
+  margin-top: 20px;
+}
+#regbox #regbox_bd #xieyi a {
+  font-size: 14px;
+}
+#regbox #regbox_bd #register {
+  margin-top: 20px;
+  background: #BC338B;
+  color: #FFFFFF;
+}
 
 /*# sourceMappingURL=reg.css.map */

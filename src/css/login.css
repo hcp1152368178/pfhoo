@@ -7,7 +7,8 @@
 */
 /*登录页头部标题*/
 .login_title {
-  margin: 78px 0 0 10px; }
+  margin: 78px 0 0 10px;
+}
 
 /*登录页主要内容区*/
 main {
@@ -15,11 +16,13 @@ main {
   height: 560px;
   background: url(../img/bg/login_bg_pic.jpg) 0px center no-repeat;
   /*背景图*/
-  position: relative; }
+  position: relative;
+}
 
 .seta, #loginbox #loginbox_bd form .remember a, #loginbox #loginbox_bd form .register-free .registerurl a {
   color: black;
-  font-size: 14px; }
+  font-size: 14px;
+}
 
 #loginbox {
   position: absolute;
@@ -29,79 +32,94 @@ main {
   background: #FFFFFF;
   top: 66px;
   right: 250px;
-  z-index: 9999; }
-  #loginbox #loginbox_hd {
-    width: 438px;
-    height: 50px;
-    padding: 19px 0 0 40px;
-    background: #f5f8fa; }
-    #loginbox #loginbox_hd li {
-      float: left;
-      width: 110px;
-      height: 30px;
-      text-align: center;
-      line-height: 30px; }
-      #loginbox #loginbox_hd li.active {
-        background: #FFFFFF;
-        color: #BC338B; }
-  #loginbox #loginbox_bd {
-    width: 360px;
-    height: 297px;
-    margin: 0 40px;
-    padding: 50px 0 0; }
-    #loginbox #loginbox_bd form {
-      display: block;
-      width: 360px;
-      height: 248px; }
-      #loginbox #loginbox_bd form #user, #loginbox #loginbox_bd form #user2, #loginbox #loginbox_bd form #psw {
-        display: block;
-        width: 360px;
-        height: 36px;
-        line-height: 36px;
-        border: 1px solid #c6c6c6;
-        padding: 0 0 0 10px;
-        color: #999; }
-      #loginbox #loginbox_bd form #codebox {
-        width: 360px;
-        height: 36px; }
-        #loginbox #loginbox_bd form #codebox #code {
-          display: block;
-          width: 188px;
-          height: 36px;
-          line-height: 36px;
-          border: 1px solid #c6c6c6;
-          padding: 0 0 0 10px;
-          color: #999; }
-        #loginbox #loginbox_bd form #codebox #btncode {
-          display: block;
-          width: 160px;
-          height: 36px;
-          line-height: 36px;
-          border: 1px solid #c6c6c6;
-          margin-left: 10px;
-          color: #000000; }
-      #loginbox #loginbox_bd form .jianGe {
-        height: 24px;
-        line-height: 24px; }
-      #loginbox #loginbox_bd form .remember {
-        width: 360px;
-        height: 14px;
-        font-size: 14px;
-        line-height: 14px; }
-        #loginbox #loginbox_bd form .remember span {
-          display: inline-block;
-          font-size: 14px;
-          margin-left: 5px; }
-      #loginbox #loginbox_bd form #login, #loginbox #loginbox_bd form #login2 {
-        width: 100%;
-        height: 40px;
-        margin-top: 35px;
-        background: #BC338B;
-        color: #FFFFFF; }
-      #loginbox #loginbox_bd form .register-free {
-        width: 360px;
-        height: 14px;
-        text-align: right;
-        margin-top: 20px; }
+  z-index: 9999;
+}
+#loginbox #loginbox_hd {
+  width: 438px;
+  height: 50px;
+  padding: 19px 0 0 40px;
+  background: #f5f8fa;
+}
+#loginbox #loginbox_hd li {
+  float: left;
+  width: 110px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+#loginbox #loginbox_hd li.active {
+  background: #FFFFFF;
+  color: #BC338B;
+}
+#loginbox #loginbox_bd {
+  width: 360px;
+  height: 297px;
+  margin: 0 40px;
+  padding: 50px 0 0;
+}
+#loginbox #loginbox_bd form {
+  display: block;
+  width: 360px;
+  height: 248px;
+}
+#loginbox #loginbox_bd form #user, #loginbox #loginbox_bd form #user2, #loginbox #loginbox_bd form #psw {
+  display: block;
+  width: 360px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #c6c6c6;
+  padding: 0 0 0 10px;
+  color: #999;
+}
+#loginbox #loginbox_bd form #codebox {
+  width: 360px;
+  height: 36px;
+}
+#loginbox #loginbox_bd form #codebox #code {
+  display: block;
+  width: 188px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #c6c6c6;
+  padding: 0 0 0 10px;
+  color: #999;
+}
+#loginbox #loginbox_bd form #codebox #btncode {
+  display: block;
+  width: 160px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #c6c6c6;
+  margin-left: 10px;
+  color: #000000;
+}
+#loginbox #loginbox_bd form .jianGe {
+  height: 24px;
+  line-height: 24px;
+}
+#loginbox #loginbox_bd form .remember {
+  width: 360px;
+  height: 14px;
+  font-size: 14px;
+  line-height: 14px;
+}
+#loginbox #loginbox_bd form .remember span {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 5px;
+}
+#loginbox #loginbox_bd form #login, #loginbox #loginbox_bd form #login2 {
+  width: 100%;
+  height: 40px;
+  margin-top: 35px;
+  background: #BC338B;
+  color: #FFFFFF;
+}
+#loginbox #loginbox_bd form .register-free {
+  width: 360px;
+  height: 14px;
+  text-align: right;
+  margin-top: 20px;
+}
 
 /*# sourceMappingURL=login.css.map */

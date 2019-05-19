@@ -1217,6 +1217,9 @@ main{
                                     font-size:12px;
                                 }
                             }
+                            p:hover{
+                                text-decoration:underline;
+                            }
                         }
                     } 
                     .hangYeNews_info_newsInfoList{
@@ -1234,10 +1237,13 @@ main{
                             overflow: hidden;
                             text-overflow: ellipsis;
                             white-space: nowrap;
+                            &:hover{
+                                text-decoration:underline;
+                            }
                         }
                         .date{
                             color: #999;
-                            float: right;
+                            float:right;
                         }
                         &>a{
                             display: block;
@@ -1262,7 +1268,7 @@ main{
                 padding-bottom: 5px;
                 border-bottom: 2px solid #183b8c;
                 a{
-                    float: right;
+                    float:right;
                     font-size: 14px;
                     color: #999;
                     font-weight: 500;
